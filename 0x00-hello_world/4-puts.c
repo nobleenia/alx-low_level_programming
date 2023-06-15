@@ -1,5 +1,5 @@
 #!/bin/bash
-#include <studio.>
+#include <studio.h>
 
 int main(void)
 {
