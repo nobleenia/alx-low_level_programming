@@ -3,7 +3,7 @@
 /**
  * main - function starting point
  *
- * return 0 - end of project
+ * return main value 0 
  */
 int main(void)
 {
