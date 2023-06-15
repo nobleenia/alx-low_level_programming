@@ -1,2 +1,0 @@
-#!/bib/bash
-gcc $CFILE -o c
