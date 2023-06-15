@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - program starting point
+ * main - Entry
  *
  * Return - SUCCESS
  */
