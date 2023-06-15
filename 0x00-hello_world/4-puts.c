@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 /**
- *Function starting point - define main
+ * main - function starting point
  *
- * Return 0
+ * return 0 - end of project
  */
 int main(void)
 {
-  puts("\"Programming is like building a multilingual puzzle");
-  return (0);
+puts("\"Programming is like building a multilingual puzzle");
+return (0);
 }
