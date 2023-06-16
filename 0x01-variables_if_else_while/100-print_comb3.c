@@ -15,10 +15,10 @@ while (first_digit <= 9)
 {
 while (second_digit <= 9)
 {
-  if (second_digit > first_digit)
+if (second_digit > first_digit)
 {
-putchar(first_digit);
-putchar(second_digit);
+putchar('0' + first_digit);
+putchar('0' + second_digit);
 if (first_digit != 9 || second_digit != 9)
 {
 putchar(',');
