@@ -19,7 +19,7 @@ lower_cases++;
 while (upper_cases <= 'Z')
 {
 putchar(upper_cases);
-lower_cases++;
+upper_cases++;
 }
 
 putchar('\n');
