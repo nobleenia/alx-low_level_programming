@@ -8,6 +8,7 @@
 int main(void)
 {
 int single_digit = 0;
+
 while (single_digit <= 9)
 {
 putchar(single_digit);
