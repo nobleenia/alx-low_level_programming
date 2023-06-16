@@ -12,7 +12,8 @@ int single_digit = 0;
 while (single_digit <= 9)
 {
 printf(single_digit);
+single_digit++;
 }
-print("\n")
+printf("\n")
 return (0);
 }
