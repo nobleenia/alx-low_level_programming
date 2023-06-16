@@ -1,12 +1,13 @@
 #include <stdio.h>
 
 /**
- * main - input of the code                                                                                        
- * for loop for the first digit                                                                                    
- * for loop that iterates the second digit                                                                         
- * Return: 0 (successful)                                                                                          
+ * main - input of the code
+ * for loop for the first digit
+ *for loop for the second digit
+ *for loop for the third digit
+ * Return: 0 (successful)
  */
-int main(void)
+int main void
 {
 int first_digit, second_digit, third_digit;
 
