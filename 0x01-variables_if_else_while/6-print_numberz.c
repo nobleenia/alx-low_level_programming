@@ -11,7 +11,7 @@ int single_digit = 0;
 
 while (single_digit <= 9)
 {
-putchar(0 + single_digit);
+putchar('0' + single_digit);
 single_digit++;
 }
 putchar('\n');
