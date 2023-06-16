@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * main - Program beginning point
- * 
+ *
  * Return: 0 (indicating successful)
  */
 int main(void)
