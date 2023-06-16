@@ -15,6 +15,7 @@ while (digits <= 9)
 {
 putchar('0' + digits);
 putchar(',');
+putchar(' ');
 digits++;
 }
 
