@@ -7,7 +7,7 @@
  *for loop for the third digit
  * Return: 0 (successful)
  */
-int main void
+int main(void)
 {
 int first_digit, second_digit, third_digit;
 
