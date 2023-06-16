@@ -24,6 +24,8 @@ if (first_digit != 8 && second_digit != 9)
 putchar(',');
 putchar(' ');
 }
+}
+}
 putchar('\n');
 return (0);
 }
