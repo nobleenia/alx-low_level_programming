@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-/**                                                                                                                 
- * main - input of the code                                                                                         
- * for loop for the first digit                                                                                     
- * for loop that iterates the second digit                                                                          
- * Return: 0 (successful)                                                                                           
+/**
+ * main - input of the code                                                                                        
+ * for loop for the first digit                                                                                    
+ * for loop that iterates the second digit                                                                         
+ * Return: 0 (successful)                                                                                          
  */
 int main(void)
 {
@@ -25,6 +25,7 @@ if (first_digit != 7 || second_digit != 8 || third_digit != 9)
 {
 putchar(',');
 putchar(' ');
+}
 }
 }
 }
