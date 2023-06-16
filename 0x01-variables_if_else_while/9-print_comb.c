@@ -13,7 +13,8 @@ int digits = 0;
 
 while (digits <= 9)
 {
-putchar('0' + digits, ',');
+putchar('0' + digits);
+putchar(',');
 digits++;
 }
 
