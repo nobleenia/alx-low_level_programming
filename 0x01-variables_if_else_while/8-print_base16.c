@@ -10,12 +10,12 @@ int main (void)
 int hex_numbers = 0;
 char hex_alphabets = 'a';
 
-while (hex_numbers <= 9)
+while(hex_numbers <= 9)
 {
 putchar('0' + hex_numbers);
 hex_numbers++;
 }
-while (hex_alphabets <= 'f')
+while(hex_alphabets <= 'f')
 {
 putchar(hex_alphabets);
 hex_alphabets++;
