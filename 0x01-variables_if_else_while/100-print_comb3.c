@@ -15,7 +15,7 @@ while (second_digit <= 9)
 {
 while (first_digit <= 8)
 {
-if (second_digit > first digit)
+if (second_digit > first_digit)
 putchar('0' + first_digit);
 putchar('0' + second_digit);
 }
