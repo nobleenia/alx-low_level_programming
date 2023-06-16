@@ -9,6 +9,7 @@
 int main(void)
 {
 int first_digit = 0;
+int i;
 
 while (first_digit <= 8)
 {
