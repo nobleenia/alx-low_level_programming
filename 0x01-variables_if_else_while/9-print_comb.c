@@ -14,12 +14,13 @@ int digits = 0;
 while (digits <= 9)
 {
 putchar('0' + digits);
+
 if (digits != 9)
 {
 putchar(',');
 putchar(' ');
-digits++;
 }
+digits++;
 }
 
 putchar('\n');
