@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- *
- *
- *
+ * main - The program start point
+ * while loop that writes all the letters
+ * Return: 0 (indicates success)
  */
 
 int main(void)
