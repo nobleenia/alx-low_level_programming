@@ -8,23 +8,26 @@
  */
 int main(void)
 {
-int first_digit;
-int second_digit;
+int first_digit = 0;
+int second_digit = 0;
 
-for (first_digit = 0; first_digit <= 8; first_digit++)
+while (first_digit <= 9)
 {
-for (second_digit = first_digit + 1; second_digit <= 9; second_digit++)
-while (second_digit > first_digit)
+while (second_digit <= 9)
 {
-putchar('0' + first_digit);
-putchar('0' + second_digit);
-
-if (first_digit != 8 && second_digit != 9)
+  if (second_digit > first_digit)
+{
+putchar(first_digit);
+putchar(second_digit);
+if (first_digit != 9 || second_digit != 9)
 {
 putchar(',');
 putchar(' ');
 }
 }
+second_digit++;
+}
+first_digit++;
 }
 putchar('\n');
 return (0);
