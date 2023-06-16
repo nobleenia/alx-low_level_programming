@@ -12,7 +12,7 @@ char hex_alphabets = 'a';
 
 while (hex_numbers <= 9)
 {
-putchar(hex_numbers);
+putchar('0' + hex_numbers);
 hex_numbers++;
 }
 while (hex_alphabets <= 'f')
