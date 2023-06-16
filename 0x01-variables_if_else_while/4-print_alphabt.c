@@ -10,7 +10,7 @@ char lower_cases = 'a';
 
 while (lower_cases <= 'z')
 {
-if (lower_cases != 'q' || lower_cases != 'e')
+if (lower_cases != 'q' && lower_cases != 'e')
 {
 putchar(lower_cases);
 }
