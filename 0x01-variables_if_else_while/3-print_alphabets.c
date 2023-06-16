@@ -14,7 +14,7 @@ while (lower_cases < 'z')
 putchar(lower_cases);
 lower_cases++;
 
-while (ipper_cases < 'Z')
+while (upper_cases < 'Z')
 putchar(upper_cases);
 lower_cases++;
 
