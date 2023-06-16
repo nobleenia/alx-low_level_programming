@@ -5,7 +5,6 @@
  *
  * Return: 0 (indicating successful completion)
  */
-
 int main(void)
 {
 int single_digit = 0;
@@ -14,6 +13,6 @@ while (single_digit <= 9)
 printf("%i", single_digit);
 single_digit++;
 }
-printf("\n")
+printf("\n");
 return (0);
 }
