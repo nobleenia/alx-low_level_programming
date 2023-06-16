@@ -13,6 +13,6 @@ while (lower_case <= 'z')
     putchar(lower_case);
     lower_case ++;
     }
-putchar("\n");
+putchar('\n');
 return (0);
 }
