@@ -16,11 +16,11 @@ for (second_digit = 0; second_digit < 100; second_digit++)
 {
 if (first_digit < second_digit)
 {
-putchar('48' + (first_digit / 10));
-putchar('48' + (first_digit % 10));
+putchar(48 + (first_digit / 10));
+putchar(48 + (first_digit % 10));
 putchar(' ');
-putchar('48' + (second_digit / 10));
-putchar('48' + (second_digit % 10));
+putchar(48 + (second_digit / 10));
+putchar(48 + (second_digit % 10));
 if (first_digit != 98 || second_digit != 99)
 {
 putchar(',');
