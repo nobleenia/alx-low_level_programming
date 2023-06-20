@@ -2,8 +2,7 @@
 
 /**
  * _isalpha - Starting point of function to check for alphabets
- * 'c': input character(s) to be checked
- * 
+ * @c: input character(s) to be checked 
  * Return: the value 1 for characters, 0 for otherwise
  */
 int _isalpha(int c)
