@@ -34,7 +34,7 @@ _putchar(' ');
 }
 else
 {
-if ((row_val / 10) == 0);
+if ((row_val / 10) == 0)
 {
 _putchar(product_val + '0');                  
 }
