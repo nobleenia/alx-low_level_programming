@@ -15,8 +15,6 @@ for (mins = 0; mins <= 59; mins++)
 _putchar('0' + hrs);
 _putchar('0' + mins);
 _putchar('\n');
-mins++;
 }
-hrs++;
 }
 }
