@@ -12,8 +12,8 @@ for (hrs = 0; hrs <= 23; hrs++)
 {
 for (mins = 0; mins <= 59; mins++)
 {
-_putchar(hrs);
-_putchar(mins);
+_putchar('0' + hrs);
+_putchar('0' + mins);
 _putchar('\n');
 mins++;
 }
