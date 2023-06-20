@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * main - Starting point
+ * print_alphabet_x10 - Starting point
  *
- * Return: 0 (successful completion
+ * Return: void (successful completion)
  */
-int main(void)
+void print_alphabet_x10(void)
 {
 int counter = 0;
 while(counter < 10)
@@ -19,5 +19,4 @@ lower_case++;
 _putchar('\n');
 }
 counter++;
-return (0);
 }
