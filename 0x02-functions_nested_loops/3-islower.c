@@ -7,14 +7,15 @@
 int _islower(int c)
 {
 int lower_case = 'a';
-
+ int classifier;
 while (lower_case <= 'z')
 {
 if (lower_case == c)
 {
-return (1);
+int classifier = 1;
 }
 else
-return (0);
+int classifier = 0;
 }
+return (int classifier);
 }
