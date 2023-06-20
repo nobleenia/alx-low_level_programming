@@ -20,17 +20,17 @@ if (col_val != 9)
 {
 if ((product_val / 10) == 0)
 {
-_putchar(',');
-_putchar(' ');
 _putchar(' ');
 _putchar(product_val + '0');
+_putchar(',');
+_putchar(' ');
 }
 else
 {
-_putchar(',');
-_putchar(' ');
 _putchar((product_val / 10) + '0');
 _putchar((product_val % 10) + '0');
+_putchar(',');
+_putchar(' ');
 }
 }
 else
