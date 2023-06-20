@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- **
+ * _islower - definition of function checking lower cases
  *
+ * Return: value of the variable with either 1(yes) or 0(otherwise)
  */
 int _islower(int c)
 {
