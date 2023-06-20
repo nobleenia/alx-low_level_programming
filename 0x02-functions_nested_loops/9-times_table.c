@@ -20,14 +20,14 @@ if (col_val != 9)
 {
 if ((product_val / 10) == 0)
 {
-_putchar('0' + product_val);
+_putchar(product_val + '0');
 _putchar(',');
 _putchar(' ');
 }
 else
 {
-_putchar('0' + (product_val / 10));
-_putchar('0' + (product_val % 10));
+_putchar((product_val / 10) + '0');
+_putchar((product_val % 10) + '0');
 _putchar(',');
 _putchar(' ');
 }
@@ -36,12 +36,12 @@ else
 {
 if ((product_val / 10) == 0)
 {
-_putchar('0' + product_val);                  
+_putchar(product_val + '0');                  
 }
 else
 {
-_putchar('0' + (product_val / 10));
-_putchar('0' + (product_val % 10));
+_putchar((product_val / 10) + '0');
+_putchar((product_val % 10) + '0');
 }
 }
 col_val++;
