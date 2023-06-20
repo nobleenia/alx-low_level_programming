@@ -7,21 +7,36 @@
  */
 void print_to_98(int n)
 {
-int first_print = n;
-int last_print = 98;
-if (last_print > first_print)
+for (n <= 98)
 {
-_putchar('0' + first_print);
-first_print++;
-}
-else if (last_print < first_print)
+if (n != 98)
 {
-_putchar('0' + first_print);
- first_print--;
+_putchar('0' + n);
+_putchar(',');
+_putchar(' ');
+n++;
 }
 else
 {
-_putchar('0'+ last_print);
+_putchar('98')
 }
-_putchar('\n');
+}
+for (n >= 98)
+{
+if (n != 98)
+{
+_putchar('0' + n);
+_putchar(',');
+_putchar(' ');
+n--;
+}
+else
+{
+_putchar('98');
+}
+}
+for (n == 98)
+{
+_putchar('98');
+}
 }
