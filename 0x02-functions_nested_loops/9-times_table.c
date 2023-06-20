@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
+ * times_table - the starting point of the program
  *
- *
- *
+ * 
  */
 void times_table(void)
 {
@@ -38,7 +38,7 @@ else
 if ((product_val / 10) == 0)
 {
 _putchar(' ');
-_putchar(product_val + '0');                  
+_putchar(product_val + '0');
 }
 else
 {
