@@ -2,15 +2,15 @@
 
 /**
  * _abs - entry point of the function
- * @int: the number to be absoluted
+ * @d: the number to be absoluted
  * Return: absolute_val show success
  */
-int _abs(int)
+int _abs(int d)
 {
 int absolute_val;
-if (int < 0);
+if (d < 0);
 {
-absolute_val = int * -1;
+absolute_val = d * -1;
 }
 return (absolute_val);
 }
