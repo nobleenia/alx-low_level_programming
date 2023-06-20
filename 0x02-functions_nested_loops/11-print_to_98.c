@@ -26,7 +26,7 @@ for (second_digit = n; second_digit >= 98; second_digit--)
 if (second_digit != 98)
 printf("%d", second_digit);
 else if (second_digit == 98)
-printf("%d\n", second_digit)
+  printf("%d\n", second_digit);
 }
 }
 }
