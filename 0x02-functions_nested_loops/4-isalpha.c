@@ -1,9 +1,9 @@
-#include "main.H"
+#include "main.h"
 
 /**
- *
- *
- *
+ * _isalpha - Starting point of function to check for alphabets
+ * 'c': the input characters to be checked
+ * Return: the value 1 for characters, 0 for otherwise
  */
 int _isalpha(int c)
 {
