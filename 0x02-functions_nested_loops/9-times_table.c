@@ -3,7 +3,7 @@
 /**
  * times_table - the starting point of the program
  *
- * 
+ *
  */
 void times_table(void)
 {
@@ -25,7 +25,7 @@ _putchar(' ');
 _putchar(' ');
 _putchar('0' + product_val);
 }
- else if (product_val >= 10)
+else if (product_val >= 10)
 {
 _putchar(',');
 _putchar(' ');
