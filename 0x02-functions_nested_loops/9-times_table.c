@@ -18,7 +18,7 @@ while (col_val <= 9)
 product_val = row_val * col_val;
 if (row_val < 9)
 {
-if ((row_val / 10) == 0);
+if ((row_val / 10) == 0)
 {
 _putchar(product_char + '0');
 _putchar(',');
