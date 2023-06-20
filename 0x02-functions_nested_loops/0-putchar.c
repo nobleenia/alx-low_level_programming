@@ -1,12 +1,20 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - start of program
+ * main - Starting point of program
  *
- * Return: 0 (Successful completion)
+ * Return: 0 (successful completion)
  */
 int main(void)
 {
-printf("_putchar\n");
-return (0);
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
+_putchar('h');
+_putchar('a');
+_putchar('r');
+_putchar('\n');
+ return (0);
 }
