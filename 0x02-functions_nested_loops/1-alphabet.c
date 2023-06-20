@@ -3,9 +3,9 @@
 /**
  * main - Starting point
  *
- * Return: 0 (successful completion)
+ * Return: void (successful completion)
  */
-int main(void)
+void print_alphabet(void)
 {
 int lower_case = 'a';
 while (lower_case <= 'z')
@@ -14,5 +14,4 @@ _putchar(lower_case);
 lower_case++;
 }
 _putchar('\n');
-return (0);
 }
