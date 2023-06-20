@@ -3,7 +3,7 @@
 /**
  * main - entry point of program
  *
- * Return: 1 (Successful return for an int)
+ * Return: 0 (Successful return for an int)
  */
 int main(void)
 {
@@ -17,6 +17,6 @@ putchar("lower_case");
 lower_case++;
 }
 putchar('\n');
-return (1);
+return (0);
 }
 }
