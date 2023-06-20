@@ -11,4 +11,5 @@ if (d <= 0)
 {
 return (d * -1);
 }
+return (d);
 }
