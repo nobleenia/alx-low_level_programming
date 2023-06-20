@@ -17,5 +17,6 @@ classifier = 1;
 else
 classifier = 0;
 }
+lower_case++;
 return (int classifier);
 }
