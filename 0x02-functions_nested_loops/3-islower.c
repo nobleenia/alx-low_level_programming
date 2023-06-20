@@ -13,12 +13,13 @@ while (lower_case <= 'z')
 if (lower_case == c)
 {
 up_or_low = 1;
+lower_case++;
 }
 else
 {
 up_or_low = 0;
+lower_case++;
 }
- lower_case++;
 }
 return (up_or_low);
 }
