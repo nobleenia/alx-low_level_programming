@@ -7,8 +7,7 @@
  */
 void jack_bauer(void)
 {
-int hrs = 0;
-while (hrs <= 23)
+for (int hrs = 0; hrs <= 23; hrs++)
 {
 for (int mins = 0; mins <= 59; mins++)
 {
