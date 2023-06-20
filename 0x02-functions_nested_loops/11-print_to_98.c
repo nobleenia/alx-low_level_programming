@@ -17,10 +17,11 @@ first_print++;
 else if (last_print < first_print)
 {
 _putchar('0' + first_print);
-first_print-;-
+ first_print--;
 }
 else
 {
 _putchar('0'+ last_print);
 }
+_putchar('\n');
 }
