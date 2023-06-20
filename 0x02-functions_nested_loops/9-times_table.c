@@ -26,8 +26,8 @@ _putchar(' ');
 }
 else
 {
-_putchar((product_char / 10) + '0');
-_putchar((product % 10) + '0');
+_putchar((product_var / 10) + '0');
+_putchar((product_var % 10) + '0');
 _putchar(',');
 _putchar(' ');
 }
@@ -36,12 +36,12 @@ else
 {
 if ((row_val / 10) == 0);
 {
-_putchar(product_char + '0');                  
+_putchar(product_var + '0');                  
 }
 else
 {
-_putchar((product_char / 10) + '0');
-_putchar((product % 10) + '0');
+_putchar((product_var / 10) + '0');
+_putchar((product_var % 10) + '0');
 }
 }
 col_val++;
