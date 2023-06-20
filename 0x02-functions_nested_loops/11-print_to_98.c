@@ -8,7 +8,7 @@
  */
 void print_to_98(int n)
 {
-int first_digit, last_digit;
+int first_digit, second_digit;
 if (n <= 98)
 {
 for (first_digit = n; first_digit <= 98; first_digit++)
