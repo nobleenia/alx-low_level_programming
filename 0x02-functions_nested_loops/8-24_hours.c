@@ -2,7 +2,7 @@
 
 /**
  * jack_bauer - main input of the program
- * 
+ *
  * Return: void - -has no return
  */
 void jack_bauer(void)
@@ -13,7 +13,7 @@ hrs = 0;
 while (hrs <= 23)
 {
 
-mins = 0; 
+mins = 0;
 while (mins <= 59)
 {
 _putchar('0' + (hrs / 10));
