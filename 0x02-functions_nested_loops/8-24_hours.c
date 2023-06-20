@@ -13,6 +13,7 @@ for (hrs = 0; hrs <= 23; hrs++)
 for (mins = 0; mins <= 59; mins++)
 {
 _putchar('0' + hrs);
+_putchar(':');
 _putchar('0' + mins);
 _putchar('\n');
 }
