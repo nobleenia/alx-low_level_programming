@@ -23,6 +23,7 @@ if ((product_val / 10) == 0)
 _putchar(' ');
 _putchar(product_val + '0');
 _putchar(',');
+_putchar(' ');
 }
 else
 {
@@ -36,6 +37,7 @@ else
 {
 if ((product_val / 10) == 0)
 {
+_putchar(' ');
 _putchar(product_val + '0');                  
 }
 else
