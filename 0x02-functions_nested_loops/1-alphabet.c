@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - Starting point
+ * print_alphabet - Starting point of function
  *
  * Return: void (successful completion)
  */
