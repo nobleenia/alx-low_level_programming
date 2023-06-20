@@ -32,14 +32,14 @@ _putchar('0' + product_val);
 else if (product_val <= 99)
 {
 _putchar(' ');
-_putchar((multiplication_result / 10) + '0');
-_putchar((multiplication_result % 10) + '0');
+_putchar('0' + (product_val / 10));
+_putchar('0' + (product_val % 10));
 }
 else
 {
-_putchar((multiplication_result / 100) + '0');
-_putchar(((multiplication_result / 10) % 10) + '0');
-_putchar((multiplication_result % 10) + '0');
+_putchar('0' + (product_val / 100));
+_putchar('0' + ((product_val / 10) % 10));
+ _putchar('0' + (product_val % 10));
 }
 }
 }
