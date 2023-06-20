@@ -7,36 +7,25 @@
  */
 void print_to_98(int n)
 {
-for (n <= 98)
+int first_digit, last_digit;
+if (n <= 98)
 {
-if (n != 98)
+for (first_digit = n; first_digit <= 98; first_digit++)
 {
-_putchar('0' + n);
-_putchar(',');
-_putchar(' ');
-n++;
-}
-else
-{
-_putchar('98')
+if (first_digit != 98)
+printf("%d", first_digit);
+else if (first_digit == 98)
+printf("%d\n", first_digit);
 }
 }
-for (n >= 98)
+else if (n >= 98)
 {
-if (n != 98)
+for (second_digit = n; second_digit >= 98; second_digit--)
 {
-_putchar('0' + n);
-_putchar(',');
-_putchar(' ');
-n--;
+if (second_digit != 98)
+printf("%d", second_digit);
+else if (second_digit == 98)
+printf("%d\n", second_digit)
 }
-else
-{
-_putchar('98');
-}
-}
-for (n == 98)
-{
-_putchar('98');
 }
 }
