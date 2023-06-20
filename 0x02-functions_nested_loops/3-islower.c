@@ -7,7 +7,7 @@
 int _islower(int c)
 {
 int lower_case = 'a';
-int up_or_low;
+int up_or_low = 0;
 while (lower_case <= 'z')
 {
 if (lower_case == c)
