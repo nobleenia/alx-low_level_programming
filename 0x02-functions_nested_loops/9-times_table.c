@@ -16,7 +16,7 @@ col_val = 0;
 while (col_val <= 9)
 {
 product_val = row_val * col_val;
-if (row_val < 9)
+if (col_val <= 9)
 {
 if ((product_val / 10) == 0)
 {
