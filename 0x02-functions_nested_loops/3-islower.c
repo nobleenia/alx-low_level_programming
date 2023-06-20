@@ -20,5 +20,5 @@ up_or_low = 0;
 }
 }
 lower_case++;
-return (int classifier);
+return (up_or_low);
 }
