@@ -18,7 +18,7 @@ else
 {
 up_or_low = 0;
 }
+lower_case++
 }
-lower_case++;
 return (up_or_low);
 }
