@@ -7,18 +7,18 @@
  */
 int print_sign(int n)
 {
-int checker = 0
-  if (n > 0)
-    {
-     checker = 1;
-     _putchar('+');
-    }
-  else if (n < 0)
-    {
-     checker = -1;
-     _putchar('-');
-    }
-  else
-    _putchar('0');
- return (checker);
+int checker = 0;
+if (n > 0)
+{
+checker = 1;
+_putchar('+');
+}
+else if (n < 0)
+{
+checker = -1;
+_putchar('-');
+}
+else
+_putchar('0');
+return (checker);
 }
