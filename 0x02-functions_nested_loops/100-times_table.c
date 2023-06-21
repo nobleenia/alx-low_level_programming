@@ -8,7 +8,7 @@ void print_times_table(int n)
 {
 int first_val, second_val, product_val;
 
-if (n > 0 && n <= 15)
+if (n >= 0 && n <= 15)
 {
 for (first_val = 0; first_val <= n; first_val++)
 {
@@ -19,7 +19,7 @@ if (second_val == 0)
 {
 _putchar('0' + product_val);
 }
-else if (product_val < 10)
+else if (product_val < 10 && second_val != 0)
 {
 _putchar(',');
 _putchar(' ');
