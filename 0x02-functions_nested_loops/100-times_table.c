@@ -15,38 +15,32 @@ for (first_val = 0; first_val <= n; first_val++)
 for (second_val = 0; second_val <= n; second_val++)
 {
 product_val = first_val * second_val;
-if (second_val == 0)
-{
-_putchar('0' + product_val);
-}
-else if (product_val < 10)
+if (second_val != 0)
 {
 _putchar(',');
 _putchar(' ');
 if (product_val < 10)
 {
 _putchar(' ');
+_putchar(' ');
+_putchar('0' + product_val);
 }
- else
+else if (product_val < 100)
 {
+_putchar(' ');
 _putchar('0' + (product_val / 10));
 _putchar('0' + (product_val % 10));
 }
-}
-else if (product_val >= 10 && second_val < 100)
+else
 {
-_putchar(',');
-_putchar(' ');
-_putchar(' ');
-_putchar('0' + (product_val / 10));
-_putchar('0' + ((product_val / 10) % 10));
-}
-else if (product_val >= 100)
-{
-_putchar(',');
 _putchar('0' + (product_val / 100));
 _putchar('0' + ((product_val / 10) % 10));
 _putchar('0' + (product_val % 10));
+}
+}
+else
+{
+_putchar('0' + product_val);
 }
 }
 _putchar('\n');
