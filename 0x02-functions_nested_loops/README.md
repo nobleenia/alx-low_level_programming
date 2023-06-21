@@ -11,4 +11,8 @@
 9. 9-times_table.c: A function that prints the 9 times table, starting with 0
 10. 10-add.c: A function that adds two integers and returns the result.
 11. 11-print_to_98.c: A function that prints all natural numbers from n to 98, followed by a new line
-12. 
+12. 100-times_table.c: A function that prints the n times table, starting with 0
+13. 101-natural.c: A program that computes and prints the sum of all the multiples of 3 or 5 below 1024 (excluded), followed by a new line
+14. 102-fibonacci.c: A program that prints the first 50 Fibonacci numbers, starting with 1 and 2, followed by a new line
+15. 103-fibonacci.c: A  program that finds and prints the sum of the even-valued terms, followed by a new line
+16. 104-fibonacci.c: A program that finds and prints the first 98 Fibonacci numbers, starting with 1 and 2, followed by a new line
