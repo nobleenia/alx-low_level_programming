@@ -12,7 +12,7 @@ int counter = 0;
 int i;
 for (i = 0; i < a; i++)
 {
-if (i % 3 = 0 || i % 5 = 0)
+if (i % 3 == 0 || i % 5 == 0)
 {
 counter = counter + 1;	
 }
