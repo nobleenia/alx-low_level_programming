@@ -35,7 +35,7 @@ carry_2 = post_1 + post_2;
 prev_1 = post_2, post_2 = carry_2;
 printf("%lu", post_2);
 }
-if (count != 97)
+if (n != 97)
 printf(", ");
 }
 printf("\n");
