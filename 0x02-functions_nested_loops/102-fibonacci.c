@@ -18,11 +18,11 @@ for (n = 2; n <= 49; n++)
 f[n] = f[n - 1] + f[n - 2];
 }
 
-for (n = 0; n <= 49; n++)
+for (n = 0; n < 49; n++)
 {
-printf("%llu, ", f[n]);
+printf("%d, ", f[n]);
 }
-printf("%llu\n", f[49]);
+printf("%d\n", f[49]);
 
 return (0);
 }
