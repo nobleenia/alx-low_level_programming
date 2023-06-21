@@ -20,7 +20,7 @@ f[n] = f[n - 1] + f[n - 2];
 
 for (n = 0; n <= 49; n++)
 {
-printf("%d", f[n]);
+printf("%d, ", f[n]);
 }
 printf("%d\n", f[49]);
 
