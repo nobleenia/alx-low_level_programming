@@ -15,7 +15,7 @@ len = 1000000000;
 
 printf("%lu", prev_1);
 
-for n (n = 1; n < 91; n++)
+for (n = 1; n < 91; n++)
 {
 printf(", %lu", post_1);
 post_1 = post_1 + prev_1;
