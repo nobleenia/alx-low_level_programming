@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * print_times_table - prints multiplication tables, starting with 0
+ * times_table - prints multiplication tables, starting with 0
  * @n : input for the size of time table
  */
-void print_times_table(int n)
+void times_table(int n)
 {
   
 int first_val, second_val, product_val;
@@ -26,7 +26,7 @@ _putchar(',');
 _putchar(' ');
 _putchar(' ');
 _putchar(' ');
-_putchar('0' + product_val)
+ _putchar('0' + product_val);
 }
 else if (product_val >= 10 && second_val < 100)
 {
@@ -34,7 +34,7 @@ _putchar(',');
 _putchar(' ');
 _putchar(' ');
 _putchar('0' + (product_val / 10));
-_putchar('0' + ((product_val / 10) % 10));
+_putchar('0' + ((product_val / 10) % 10);
 }
 }
 _putchar('\n');
