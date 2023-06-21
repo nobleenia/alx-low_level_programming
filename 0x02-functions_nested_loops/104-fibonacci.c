@@ -27,7 +27,7 @@ carry_2 = (post_1 + post_2) % limit;
 carry_3 = prev_1 + prev_2 + carry_1;
 prev_1 = prev_2, prev_2 = carry_3;
 post_1 = post_2, post_2 = carry_2;
-printf("%lu%010lu", prev_2, post_2);
+printf("%lu, %lu", prev_2, post_2);
 }
 else
 {
