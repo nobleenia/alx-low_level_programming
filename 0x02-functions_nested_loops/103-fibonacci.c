@@ -7,11 +7,11 @@
 */
 int main(void)
 {
-unsigned long fst, seq, sum, sum_val;
+unsigned long sum_val;
 
-fst = 0;
-seq = 0;
-sum = 0;
+unsigned long fst = 0;
+unsigned long seq = 0;
+unsigned long sum = 0;
 
 while (seq <= 4000000)
 {
