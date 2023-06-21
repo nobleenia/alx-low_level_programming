@@ -16,9 +16,9 @@ sum = 0;
 
 for (n = 1; n <= 34; n++)
 {
-if (sec < 4000000 && (sec % 2) == 0)
+if (sec <= 4000000 && (sec % 2) == 0)
 {
-  sum = sum + sec;
+sum = sum + sec;
 }
 sum_val = fst + sec;
 fst = sec;
