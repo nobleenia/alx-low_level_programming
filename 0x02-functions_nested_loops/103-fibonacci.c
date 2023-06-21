@@ -7,7 +7,7 @@
 */
 int main(void)
 {
-unsigned long fst, seq, sum_val, sum;
+unsigned long fst, seq, sum;
 
 fst = 0;
 seq = 0;
@@ -19,7 +19,7 @@ if (seq % 2 == 0)
 {
 sum = sum + seq;
 }
-sum_val = fst + seq;
+unsigned long sum_val = fst + seq;
 fst = seq;
 seq = sum_val;
 }
