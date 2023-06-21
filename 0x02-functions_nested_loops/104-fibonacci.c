@@ -22,12 +22,9 @@ post_1 = prev_1 + prev_2;
 printf(", %lu", post_1);
 prev_1 = prev_2;
 prev_2 = post_1;
+}
 
-if (n = 97)
-{
 printf("\n");
-}
-}
 
 return (0);
 }
