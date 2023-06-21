@@ -15,7 +15,7 @@ sum = 0;
 
 while (seq <= 4000000)
 {
-if (sec % 2 == 0)
+  if ((seq % 2) == 0)
 {
 sum = sum + seq;
 }
