@@ -7,22 +7,21 @@
 */
 int main(void)
 {
-unsigned long fst, sec, sum_val, sum;
-int n;
+unsigned long fst, seq, sum_val, sum;
 
 fst = 0;
-sec = 0;
+seq = 0;
 sum = 0;
 
-for (n = 1; n <= 34; n++)
+while (seq <= 4000000)
 {
-if (sec <= 4000000 && (sec % 2) == 0)
+if ((sec % 2) == 0)
 {
-sum = sum + sec;
+sum = sum + seq;
 }
-sum_val = fst + sec;
-fst = sec;
-sec = sum_val;
+sum_val = fst + seq;
+fst = seq;
+seq = sum_val;
 }
 printf("%lu\n", sum);
 return (0);
