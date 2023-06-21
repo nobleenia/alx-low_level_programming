@@ -8,7 +8,7 @@
 int main(void)
 {
 unsigned long prev_1, prev_2, post_1;
-unsigned int n;
+int n;
 
 prev_1 = 1;
 prev_2 = 2;
@@ -16,15 +16,18 @@ post_1 = 0;
 
 printf("%lu, %lu", prev_1, prev_2);
 
-for (n = 3; n < 98; n++)
+for (n = 0; n <= 97; n++)
 {
 post_1 = prev_1 + prev_2;
 printf(", %lu", post_1);
-
 prev_1 = prev_2;
 prev_2 = post_1;
+
+if (n = 97)
+{
+printf("\n");
+}
 }
 
-printf("\n");
 return (0);
 }
