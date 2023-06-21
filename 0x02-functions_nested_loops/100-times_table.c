@@ -23,9 +23,15 @@ else if (product_val < 10)
 {
 _putchar(',');
 _putchar(' ');
+if (product_val < 10)
+{
 _putchar(' ');
-_putchar(' ');
-_putchar('0' + product_val);
+}
+ else
+{
+_putchar('0' + (product_val / 10));
+_putchar('0' + (product_val % 10));
+}
 }
 else if (product_val >= 10 && second_val < 100)
 {
@@ -34,6 +40,13 @@ _putchar(' ');
 _putchar(' ');
 _putchar('0' + (product_val / 10));
 _putchar('0' + ((product_val / 10) % 10));
+}
+else if (product_val >= 100)
+{
+_putchar(',');
+_putchar('0' + (product_val / 100));
+_putchar('0' + ((product_val / 10) % 10));
+_putchar('0' + (product_val % 10));
 }
 }
 _putchar('\n');
