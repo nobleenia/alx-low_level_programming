@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-int f[50];
+long long f[50];
 int n;
 
 f[0] = 1;
@@ -20,9 +20,9 @@ f[n] = f[n - 1] + f[n - 2];
 
 for (n = 0; n < 49; n++)
 {
-printf("%d, ", f[n]);
+printf("%lld, ", f[n]);
 }
-printf("%d\n", f[49]);
+printf("%lld\n", f[49]);
 
 return (0);
 }
