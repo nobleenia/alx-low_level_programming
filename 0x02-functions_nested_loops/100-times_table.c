@@ -20,7 +20,7 @@ if (second_val == 0)
 {
 _putchar('0' + product_val);
 }
-else if (product_value < 10 && second_value != 0)
+else if (product_val < 10 && second_val != 0)
 {
 _putchar(',');
 _putchar(' ');
@@ -28,7 +28,7 @@ _putchar(' ');
 _putchar(' ');
 _putchar('0' + product_val)
 }
-else if (product_value >= 10 && second_value < 100)
+else if (product_val >= 10 && second_val < 100)
 {
 _putchar(',');
 _putchar(' ');
