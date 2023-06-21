@@ -7,15 +7,15 @@
 */
 int main(void)
 {
-unsigned long int sum_val;
+unsigned long int fst, seq, sum, sum_val;
 
-unsigned long int fst = 0;
-unsigned long int seq = 0;
-unsigned long int sum = 0;
+fst = 1;
+seq = 2;
+sum = 0;
 
 while (seq <= 4000000)
 {
-if (seq % 2 == 0)
+if ((seq % 2) == 0)
 {
 sum = sum + seq;
 }
