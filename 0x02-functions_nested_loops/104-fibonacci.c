@@ -17,7 +17,7 @@ post_2 = 2;
 limit = 10000000000;
 
 printf("%lu, %lu", post_1, post_2);
-for (count = 2; count < 98; count++)
+for (n = 2; n < 98; n++)
 {
 
 if (post_1 + post_2 > limit || prev_2 > 0 || prev_1 > 0)
