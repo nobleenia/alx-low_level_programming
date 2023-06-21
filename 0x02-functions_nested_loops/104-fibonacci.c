@@ -16,7 +16,7 @@ post_1 = 0;
 
 printf("%lu, %lu", prev_1, prev_2);
 
-for (n = 3; n <= 89; n++)
+for (n = 3; n < 98; n++)
 {
 post_1 = prev_1 + prev_2;
 printf(", %lu", post_1);
