@@ -7,11 +7,11 @@
  */
 int main(void)
 {
-int val = 1024;
+
 int sum = 0;
 
 int i;
-for (i = 0; i < val; i++)
+for (i = 0; i < 1024; i++)
 {
 if ((i % 3) == 0 || (i % 5) == 0)
 {
