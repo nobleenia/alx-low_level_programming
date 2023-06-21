@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- *
- *
- *
+ * main - the starting point of the function
+ * for function
+ * Return: 0 success
  */
 int main(void)
 {
