@@ -17,10 +17,6 @@ if (c == lower_case)
 {
 is_upper = 0;
 }
-else
-{
-is_upper = 1;
-}
 }
 return (is_upper);
 }
