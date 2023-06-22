@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Entry point of the program
+ * main - entry point of the program
  *
- * Return: 0 (Success)
+ * Return: 0 (success)
  */
 int main(void)
 {
@@ -21,6 +21,10 @@ printf("Fizz ");
 else if (a % 5 == 0)
 {
 printf("Buzz ");
+}
+else if (a == 100)
+{
+printf("Buzz");
 }
 else
 {
