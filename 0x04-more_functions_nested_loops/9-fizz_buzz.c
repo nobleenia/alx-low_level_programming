@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - starting point of function
+ * main - Entry point of the program
  *
- * Return: 0 successful
+ * Return: 0 (Success)
  */
 int main(void)
 {
@@ -14,22 +14,19 @@ if ((a % 3 == 0) && (a % 5 == 0))
 {
 printf("FizzBuzz ");
 }
-else if ((a % 3 == 0) && (a % 5 != 0))
+else if (a % 3 == 0)
 {
 printf("Fizz ");
 }
-else if ((a % 5 == 0) && (a % 3 != 0))
+else if (a % 5 == 0)
 {
 printf("Buzz ");
 }
-else if (a == 100)
-{
-printf("Buzz", a);
-}
 else
+{
 printf("%d ", a);
 }
 }
-printf('\n');
+printf("\n");
 return (0);
 }
