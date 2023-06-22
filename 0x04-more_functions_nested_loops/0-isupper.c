@@ -8,10 +8,10 @@
 
 int _isupper(int c)
 {
-int lower_case = "a";
+char lower_case = 'a';
 int is_upper = 1;
 
-for (; lower_case <= "z"; lower_case++)
+for (; lower_case <= 'z'; lower_case++)
 {
 if (lower_case == c)
 {
