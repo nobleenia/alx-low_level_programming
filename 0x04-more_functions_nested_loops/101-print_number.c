@@ -20,7 +20,7 @@ digit = n;
 }
 if (digit / 10)
 {
-print_number(digit / 10)
+print_number(digit / 10);
 }
 _putchar('0' + (digit % 10));
 }
