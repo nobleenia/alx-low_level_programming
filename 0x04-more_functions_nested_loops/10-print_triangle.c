@@ -23,7 +23,7 @@ else
 _putchar('#');
 }
 }
-n--;
+i--;
 _putchar('\n');
 }
 }
