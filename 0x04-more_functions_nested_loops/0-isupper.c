@@ -5,7 +5,6 @@
  *
  *
  */
-
 int _isupper(int c)
 {
 char lower_case = 'a';
@@ -21,5 +20,4 @@ else
 return (1);
 }
 }
-return (is_upper);
-}
+
