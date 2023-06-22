@@ -11,8 +11,10 @@ char digit = '0';
 while (digit <= '9')
 {
 if (digit != '2' || digit != '4')
+{
 _putchar(digit);
 digit++;
+}
 }
 _putchar('\n');
 }
