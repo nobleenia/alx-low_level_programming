@@ -3,6 +3,7 @@
 /**
  * void print_line(int n) - start of function
  * @n: number of times to print
+ * @i: the counter
  */
 void print_line(int n)
 {
