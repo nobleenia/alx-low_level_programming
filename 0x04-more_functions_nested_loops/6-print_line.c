@@ -2,8 +2,8 @@
 
 /**
  * void print_line(int n)
- * @n: n is the number of times the character is printed
- * Return: void
+ * @n: n is the number of times to print
+ * Return: void as function has no return
  */
 void print_line(int n)
 {
