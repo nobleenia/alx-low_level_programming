@@ -8,10 +8,13 @@
 void print_most_numbers(void)
 {
 char digit = '0';
-for (; digit <= '9'; digit++)
+while (digit <= '9')
 {
-if ((digit != '2') || (digit != '4'))
+if ((digit != '2') && (digit != '4'))
+{
 _putchar(digit);
+}
+digit++;
 }
 _putchar('\n');
 }
