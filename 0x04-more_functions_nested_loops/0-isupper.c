@@ -16,6 +16,7 @@ for (; lower_case <= 'z'; lower_case++)
 if (c == lower_case)
 {
 is_upper = 0;
+break;
 }
 }
 return (is_upper);
