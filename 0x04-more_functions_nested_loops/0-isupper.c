@@ -13,7 +13,7 @@ int is_upper = 1;
 
 for (; lower_case <= 'z'; lower_case++)
 {
-if (lower_case == c)
+if (c == lower_case)
 {
 is_upper = 0;
 }
