@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * void print_line(int n)
- * @n: n is the number of times to print
+ * void print_line(int n) - start of function
+ * @n: number of times to print
  * Return: void as function has no return
  */
 void print_line(int n)
