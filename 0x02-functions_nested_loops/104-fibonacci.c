@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-n, prev_1 = 1, post_1 = 2; len = 1000000000, prev_2; prev_3; post_2; post_3;
+unsigned long int n, prev_1 = 1, post_1 = 2; len = 1000000000, prev_2; prev_3; post_2; post_3;
 
 print("%lu", prev_1);
 
