@@ -7,7 +7,14 @@
  */
 int main(void)
 {
-unsigned long int n, prev_1 = 1, post_1 = 2; len = 1000000000, prev_2; prev_3; post_2; post_3;
+unsigned long int n;
+unsigned long int prev_1 = 1;
+unsigned long int post_1 = 2;
+unsigned long int len = 1000000000;
+unsigned long int prev_2;
+unsigned long int prev_3;
+unsigned long int post_2;
+unsigned long int post_3;
 
 print("%lu", prev_1);
 
@@ -34,3 +41,4 @@ prev_3 = post_3 - prev_3;
 }
 printf("\n");
 return (0);
+}
