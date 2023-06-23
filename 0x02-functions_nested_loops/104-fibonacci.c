@@ -14,7 +14,7 @@ prev_1 = 0;
 prev_2 = 0;
 post_1 = 1;
 post_2 = 2;
-limit = 10000000000;
+limit = 1000000000;
 
 printf("%lu, %lu", post_1, post_2);
 for (n = 2; n < 98; n++)
