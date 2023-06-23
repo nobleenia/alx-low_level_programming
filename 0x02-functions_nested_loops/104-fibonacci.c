@@ -7,36 +7,30 @@
  */
 int main(void)
 {
-unsigned int prev_1, prev_2, post_1, post_2, carry_1, carry_2, carry_3;
-int n;
+n, prev_1 = 1, post_1 = 2; len = 1000000000, prev_2; prev_3; post_2; post_3;
 
-prev_1 = 0;
-prev_2 = 0;
-post_1 = 1;
-post_2 = 2;
+print("%lu", prev_1);
 
-printf("%u, %u", post_1, post_2);
-for (n = 3; n <= 98; n++)
+for (n = 1; n < 91; n++)
 {
-if (prev_2 > 0 || prev_1 > 0)
-{
-carry_1 = (post_1 + post_2) / 1000000000;
-carry_2 = (post_1 + post_2) % 1000000000;
-carry_3 = prev_1 + prev_2 + carry_1;
-prev_1 = prev_2;
-prev_2 = carry_3;
-post_1 = post_2;
-post_2 = carry_2;
-printf(", %u", carry_2);
+print(", %lu", post_1);
+post_1 += prev_1;
+prev_1 = post_1 - prev_1
 }
-else
+
+prev_2 = (prev_1 / len);
+prev_3 = (prev_1 % len);
+post_2 = (post_1 / len);
+post_3 = (post_1 % len);
+
+for (n = 92; n < 99; ++n)
 {
-carry_2 = post_1 + post_2;
-prev_1 = post_2;
-post_2 = carry_2;
-printf(", %u", carry_2);
-}
+printf(", %lu", post_2 + (post_3 / len));
+printf("%lu", post_3 % len);
+post_2 = post_2 + prev_2;
+prev_2 = post_2 - prev_2;
+post_3 = post_3 + prev_3;
+prev_3 = post_3 - prev_3;
 }
 printf("\n");
 return (0);
-}
