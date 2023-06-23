@@ -16,13 +16,13 @@ unsigned long int prev_3;
 unsigned long int post_2;
 unsigned long int post_3;
 
-print("%lu", prev_1);
+printf("%lu", prev_1);
 
 for (n = 1; n < 91; n++)
 {
 print(", %lu", post_1);
 post_1 += prev_1;
-prev_1 = post_1 - prev_1
+prev_1 = post_1 - prev_1;
 }
 
 prev_2 = (prev_1 / len);
