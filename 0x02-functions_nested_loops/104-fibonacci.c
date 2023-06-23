@@ -20,7 +20,7 @@ printf("%lu", prev_1);
 
 for (n = 1; n < 91; n++)
 {
-print(", %lu", post_1);
+printf(", %lu", post_1);
 post_1 += prev_1;
 prev_1 = post_1 - prev_1;
 }
