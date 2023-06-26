@@ -15,9 +15,8 @@ while (s[len] != '\0')
 {
 len++;
 }
-for (p = len - 1; p >= 0; p--)
+for (p = 0; (p < len / 2); p++)
 {
 rev = s[p];
 }
-return (rev);
 }
