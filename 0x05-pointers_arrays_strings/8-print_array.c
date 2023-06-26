@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- *
- *
- *
+ * print_array - prints the items in an array to a given limit
+ * @a: the input array
+ * @n: the limit of printing
  */
 void print_array(int *a, int n)
 {
