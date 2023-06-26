@@ -23,7 +23,7 @@ else
 {
 n = (len + 1) / 2;
 }
- 
+
 for (c = n; c < len; c++)
 {
 _putchar (str[c]);
