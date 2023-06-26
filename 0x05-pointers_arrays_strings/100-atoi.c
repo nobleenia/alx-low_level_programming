@@ -21,7 +21,13 @@ while (s[n] != '\0')
 {
 if (s[n] >= '0' && s[n] <= '9')
 {
-digit = digit * 10 + (s[n] - '0');
+int current_digit = s[i] - '0';
+if (digit > INT_MAX / 10 || (digit == INT_MAX / 10 && current_digit > INT_MAX % 10))
+{
+return (sign == -1) ? INT_MIN : INT_MAX;
+}
+
+digit = digit * 10 + current_digit;
 }
 else
 {
