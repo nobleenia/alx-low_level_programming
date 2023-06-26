@@ -21,4 +21,5 @@ else
 printf("%d", a[count]);
 }
 }
+printf("\n");
 }
