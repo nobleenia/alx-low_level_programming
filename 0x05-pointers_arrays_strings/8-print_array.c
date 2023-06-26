@@ -13,12 +13,12 @@ for (count = 0; count < n; count++)
 {
 if (count < (n - 1))
 {
-_putchar(a[count]);
-_putchar(", ");
+printf("%d", a[count]);
+printf(", ");
 }
 else
 {
-_putchar(a[count]);
+printf("%d", a[count]);
 }
 }
 }
