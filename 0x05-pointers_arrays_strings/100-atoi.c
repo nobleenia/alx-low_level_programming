@@ -22,13 +22,13 @@ while (s[n] != '\0')
 {
 if (s[n] >= '0' && s[n] <= '9')
 {
-int current_digit = s[n] - '0';
-if (digit > INT_MAX / 10 || (digit == INT_MAX / 10 && current_digit > INT_MAX % 10))
+int ct_digit = s[n] - '0';
+if (digit > INT_MAX / 10 || (digit == INT_MAX / 10 && ct_digit > INT_MAX % 10))
 {
-return (sign == -1) ? INT_MIN : INT_MAX;
+return ((sign == -1) ? INT_MIN : INT_MAX);
 }
 
-digit = digit * 10 + current_digit;
+digit = digit * 10 + ct_digit;
 }
 else
 {
@@ -36,5 +36,5 @@ break;
 }
 n++;
 }
-return digit * sign;
+return (digit * sign);
 }
