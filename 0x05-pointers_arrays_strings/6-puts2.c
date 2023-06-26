@@ -16,6 +16,6 @@ len++;
 for (c = 0; c < len; c += 2)
 {
 _putchar (str[c]);
-_putchar ('\n');
 }
+_putchar ('\n');
 }
