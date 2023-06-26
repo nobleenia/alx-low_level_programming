@@ -18,7 +18,7 @@ if (s[n] == 45)
 {
 min *= -1;
 }
-while (s[n] >= 48 && s[n] <= 57);
+while (s[n] >= 48 && s[n] <= 57)
 {
 a = 1;
 digit = (digit * 10) + (s[n] - '0');
