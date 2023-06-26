@@ -24,7 +24,7 @@ if (s[n] >= '0' && s[n] <= '9')
 {
 int ct_digit = s[n] - '0';
 digit = digit * 10 + ct_digit;
-if (digit > INT_MAX / 10 || (digit == INT_MAX / 10) && (ct_digit > INT_MAX % 10))
+if ((digit > INT_MAX / 10) || (digit == INT_MAX / 10) && (ct_digit > INT_MAX % 10))
 {
 return ((sign == -1) ? INT_MIN : INT_MAX);
 }
