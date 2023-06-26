@@ -4,6 +4,7 @@
  * _strcpy - function that copies the string pointed to
  * @dest: address of buffer to copy string to
  * @src: address of string to be copied
+ * Return: the value of *dest
  */
 char *_strcpy(char *dest, char *src)
 {
