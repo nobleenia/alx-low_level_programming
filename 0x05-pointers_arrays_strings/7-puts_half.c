@@ -12,7 +12,7 @@ while (str[len] != '\0')
 {
 len++;
 }
-for (c = 0; c <= (len / 2); c++)
+for (c = 0; c > (len / 2); c++)
 {
 _putchar (str[c]);
 }
