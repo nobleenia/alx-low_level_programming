@@ -24,7 +24,7 @@ while (str[len] != '\0')
 len++;
 }
 
-for (c = n; c < n; c++)
+for (c = n; c < len; c++)
 {
 _putchar (str[c]);
 }
