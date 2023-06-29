@@ -12,7 +12,7 @@ int a, b;
 char in[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 char enc[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-for (a= 0; str[a] != '\0'; a++)
+for (a = 0; str[a] != '\0'; a++)
 {
 for (b = 0; in[b] != '\0'; b++)
 {
