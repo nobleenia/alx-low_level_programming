@@ -16,7 +16,12 @@ _putchar('-');
 a = -n;
 }
 if (a / 10 != 0)
+{
 print_number(a / 10);
-
 _putchar((a % 10) + '0');
+}
+else
+{
+_putchar(a + '0');
+}
 }
