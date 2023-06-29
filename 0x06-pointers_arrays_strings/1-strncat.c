@@ -18,6 +18,7 @@ while (dest[first_word] != '\0')
 len_dest++;
 first_word++;
 }
+sec_wrd = 0;
 while ((src[sec_word] != '\0') && (sec_word < n))
 {
 dest[len_dest + sec_word] = src[sec_word];
@@ -26,7 +27,7 @@ sec_word++;
 }
 if (sec_word == n)
 {
-dest[first_word] = '\0';
+dest[len_dest + sec_word] = '\0';
 }
 else
 {

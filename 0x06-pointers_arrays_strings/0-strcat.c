@@ -23,6 +23,6 @@ dest[first_wrd] = src[sec_wrd];
 first_wrd++;
 sec_wrd++;
 }
-dest[first_word] = '\0';
+dest[first_wrd] = '\0';
 return (dest);
 }
