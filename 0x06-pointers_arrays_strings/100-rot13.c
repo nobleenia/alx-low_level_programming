@@ -18,7 +18,7 @@ for (b = 0; in[b] != '\0'; b++)
 {
 if (str[a] == in[b])
 {
-str[i] = enc[j];
+str[a] = enc[b];
 break;
 }
 }
