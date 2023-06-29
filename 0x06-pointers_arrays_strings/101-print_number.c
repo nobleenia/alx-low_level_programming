@@ -4,7 +4,7 @@
  * print_number - prints an integer
  * @n: input value
  *
- * Return: 0
+ * Return: void
  */
 void print_number(int n)
 {
