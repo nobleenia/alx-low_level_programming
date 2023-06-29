@@ -15,7 +15,7 @@ while (str[n] != '\0')
 {
 if (str[n] >= 'a' && str[n] <= 'z')
 {
-str[n] = str[n] - 'a' + 'A';
+str[n] = str[n] - 32;
 }
 i++;
 }
