@@ -6,7 +6,7 @@
  *
  * Return: the converted string
  */
-char *string_toupper(char *)
+char *string_toupper(char *str)
 {
 int n;
 
@@ -19,5 +19,6 @@ str[n] = str[n] - 'a' + 'A';
 }
 i++;
 }
+ 
 return (str);
 }
