@@ -19,6 +19,6 @@ str[n] = str[n] - 'a' + 'A';
 }
 n++;
 }
- 
+
 return (str);
 }
