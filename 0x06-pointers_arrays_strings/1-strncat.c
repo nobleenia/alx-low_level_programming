@@ -27,7 +27,7 @@ sec_word++;
 }
 if (sec_word == n)
 {
-dest[len_dest + sec_word] = '\0';
+dest[first_word] = '\0';
 }
 else
 {
