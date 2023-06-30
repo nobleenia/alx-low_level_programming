@@ -26,17 +26,12 @@ printf("%08x: ", x);
 for (y = 0; y < 10; y++)
 {
 if (x + y < size)
-{
 printf("%02x", bf[x + y]);
-}
 else
-{
 printf("  ");
-}
+
 if (y % 2)
-{
 printf(" ");
-}
 }
 for (y = 0; y < 10; y++)
 {
