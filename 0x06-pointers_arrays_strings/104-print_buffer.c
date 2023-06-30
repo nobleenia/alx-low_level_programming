@@ -10,8 +10,7 @@
  */
 void print_buffer(char *b, int size)
 {
-int a = 0;
-int d, c;
+int a, d, c;
 
 if (size <= 0)
 {
@@ -35,7 +34,7 @@ printf(" ");
 }
 for (c = 0; c < d; c++)
 {
-int f = b[a + c]);
+char f = b[a + c];
 if (f < 32 || f > 126)
 {
 f = '.';
