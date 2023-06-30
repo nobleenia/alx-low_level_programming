@@ -9,39 +9,40 @@
  */
 void print_buffer(char *b, int size)
 {
-int a = 0;
-int d, c;
+int a, d, c;
 
 if (size <= 0)
 {
 printf("\n");
 return;
 }
-while (a < size)
+
+for (a = 0; a < size; a += 10)
 {
 d = (size - a) < 10 ? (size - a) : 10;
 printf("%08x: ", a);
-for(c = 0; c < 10; c++)
+
+for (c = 0; c < 10; c++)
 {
 if (c < d)
-printf("%02x:", *(b + a + c));
+printf("%02hhx", b[a + c]);
 else
 printf("  ");
-if (c % 2)
-{
+
+if (c % 2 == 1)
 printf(" ");
 }
-}
+
+printf(" ");
+
 for (c = 0; c < d; c++)
 {
-int f = *(b + a + c);
+char f = b[a + c];
 if (f < 32 || f > 126)
-{
 f = '.';
-}
 printf("%c", f);
 }
+
 printf("\n");
-a += 10;
 }  
 }
