@@ -19,7 +19,7 @@ printf("\n");
 return;
 }
 
-for (x = 0; x <= size; x += 10)
+for (x = 0; x < size; x += 10)
 {
 printf("%08x: ", x);
 
