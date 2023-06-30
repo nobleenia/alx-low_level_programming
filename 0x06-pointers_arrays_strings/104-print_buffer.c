@@ -10,39 +10,45 @@
  */
 void print_buffer(char *b, int size)
 {
-int a = 0;
-int d, c;
+int x, y;
+unsigned char *bf = (unsigned char *)b;
 
 if (size <= 0)
 {
 printf("\n");
 return;
 }
-while (a < size)
+
+for (x = 0; x < size; x += 10)
 {
-d = (size - a) < 10 ? (size - a) : 10;
-printf("%08x: ", a);
-for(c = 0; c < 10; c++)
+printf("%08x: ", x);
+
+for (y = 0; y < 10; y++)
 {
-if (c < d)
-printf("%02x:", *(b + a + c));
+if (x + y < size)
+{
+printf("%02x", bf[x + y]);
+}
 else
+{
 printf("  ");
-if (c % 2)
+}
+if (y % 2)
 {
 printf(" ");
 }
 }
-for (c = 0; c < d; c++)
+for (y = 0; y < 10; y++)
 {
-int f = *(b + a + c);
-if (f < 32 || f > 126)
-{
-f = '.';
+if (x + y >= size)
+break;
+
+if (bf[x + y] >= 32 && bf[x + y] <= 126)
+printf("%c", bf[x + y]);
+else
+printf(".");
 }
-printf("%c", f);
-}
+
 printf("\n");
-a += 10;
 }
 }
