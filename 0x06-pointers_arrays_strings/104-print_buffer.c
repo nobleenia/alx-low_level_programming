@@ -30,7 +30,7 @@ printf("%02x", bf[x + y]);
 else
 printf("  ");
 
-if (y % 2 == 0)
+if (y % 2)
 printf(" ");
 }
 for (y = 0; y <= 9; y++)
