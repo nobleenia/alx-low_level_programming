@@ -14,5 +14,4 @@ _puts_recursion(s + 1);
 }
 _putchar('\n');
 
-return (0);
 }
