@@ -24,7 +24,7 @@ else if (*s2 == '*')
 {
 return (wildcmp(s1 + 1, s2));
 }
-else (*s1 == *s2)
+else if (*s1 == *s2)
 {
 return (wildcmp(s1 + 1, s2 + 1));
 }
