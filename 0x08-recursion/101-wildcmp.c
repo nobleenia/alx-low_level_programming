@@ -22,7 +22,7 @@ return (*s2 == '\0');
 }
 else if (*s2 == '*')
 {
-return (wilcmp(s1 + 1, s2));
+return (wildcmp(s1 + 1, s2));
 }
 else (*s1 == *s2)
 {
