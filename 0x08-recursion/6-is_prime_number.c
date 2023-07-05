@@ -1,6 +1,6 @@
 #include "main.h"
 
-int prime_chck(int num, i);
+int prime_chck(int num, int i);
 
 /**
  * is_prime_number - checks if a number is prime
@@ -27,7 +27,7 @@ return(prime_chck(n, n - 1));
  *
  * Return: 1 if prime, 0 if not
  */
-int prime_chck(int num, i)
+int prime_chck(int num, int i)
 {
 if (num == 1)
 {
