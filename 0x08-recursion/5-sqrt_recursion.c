@@ -38,6 +38,6 @@ return (i);
 }
 else
 {
-return (sq_rt(num, i + 1);
+return (sq_rt(num, i + 1));
 }
 }
