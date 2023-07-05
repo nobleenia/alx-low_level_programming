@@ -44,7 +44,7 @@ return (len);
  * @i: counter variable
  * @len: length of the string to check
  *
- * Return: 0, 1 if palindrome or not
+ * Return: 1 or 0, if palindrome or not
  */
 int pal_chck(char *s, int i, int len)
 {
