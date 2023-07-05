@@ -12,11 +12,11 @@ int is_prime_number(int n)
 {
 if (n <= 1)
 {
-return (-1);
+return (0);
 }
 else
 {
-return(prime_chck(n, n - 1));
+return (prime_chck(n, n - 1));
 }
 }
 
@@ -29,11 +29,11 @@ return(prime_chck(n, n - 1));
  */
 int prime_chck(int num, int i)
 {
-if (num == 1)
+if (i == 1)
 {
 return (1);
 }
-else if ((num % i == 0) && (i > 0))
+else if (num % i == 0)
 {
 return (0);
 }
