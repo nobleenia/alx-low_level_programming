@@ -10,7 +10,7 @@
  */
 int main(int argc, char **argv)
 {
-char *name = argv[argc];
+char *name = argv[0];
 char *dlm = name;
 while (*name != '\0')
 {
