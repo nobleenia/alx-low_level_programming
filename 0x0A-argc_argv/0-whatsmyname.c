@@ -10,6 +10,7 @@
  */
 int main(int argc, char **argv)
 {
-printf("%s\n", argv[argc]);
+char *name = argv[argc];
+printf("%s\n", name);
 return (0);
 }
