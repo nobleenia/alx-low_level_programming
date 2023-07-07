@@ -11,6 +11,15 @@
 int main(int argc, char **argv)
 {
 char *name = argv[argc];
-printf("%s\n", name);
+char *dlm = name;
+while (*name != '\0')
+{
+if (*name == '/')
+{
+dlm = name + 1;
+}
+name++;
+}
+printf("%s\n", dlm);
 return (0);
 }
