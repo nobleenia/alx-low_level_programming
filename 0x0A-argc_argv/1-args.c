@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define UNUSED(x) (void)(x)
+
 /**
  * main - prints number of arguments in it
  * @argc: argument counter
@@ -10,12 +12,10 @@
  */
 int main(int argc, char **argv)
 {
-int n;
 
-if (argc > 1)
-{
-n = atoi(argc[argv]);
-printf("%d/n", n);
-}
+UNUSED(argv);
+
+printf("%d/n", (argc - 1));
+
 return (0);
 }
