@@ -15,8 +15,13 @@ int n = 0;
 
 if (argc != 1)
 {
-printf("Error");
+printf("Error\n");
 return (1);
+}
+
+if (cents < 0)
+{
+printf("%d\n", 0);
 }
 
 while (cents > 0)
@@ -41,10 +46,8 @@ else if (cents >= 1)
 {
 cents -= 1;
 }
-else
-{
-n += 1;
-}
+n++;
+
 }
 printf("%d\n", n);
 return (0);
