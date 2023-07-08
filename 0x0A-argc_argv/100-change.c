@@ -12,7 +12,7 @@ int main(int argc, char **argv)
 {
 
 int n, a, change;
-int coins[5] = {25, 10, 5, 2, 1}
+int coins[5] = {25, 10, 5, 2, 1};
 
 if (argc != 2)
 {
@@ -34,9 +34,9 @@ for (a = 0; a < 5 && n >= 0; a++)
 while (n >= coins[a])
 {
 change++;
-n -= coins[j];
+n -= coins[a];
 }
 }
 printf("%d\n", change);
-result (0);
+return (0);
 }
