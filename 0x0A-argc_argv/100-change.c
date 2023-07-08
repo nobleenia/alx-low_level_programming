@@ -25,7 +25,7 @@ printf("0\n");
 return (0);
 }
 
-while (cents > 0)
+while (cents >= 1)
 {
 if (cents >= 25)
 {
@@ -43,7 +43,7 @@ else if (cents >= 2)
 {
 cents -= 2;
 }
-else if (cents > 1)
+else if (cents < 2)
 {
 cents -= 1;
 }
