@@ -10,8 +10,9 @@
  */
 int main(int argc, char **argv)
 {
-int cents = atoi(argv[1]);
-int n = 0;
+
+int n, a, change;
+int coins[5] = {25, 10, 5, 2, 1}
 
 if (argc != 2)
 {
@@ -19,36 +20,23 @@ printf("Error\n");
 return (1);
 }
 
-if (cents < 0)
+n = atoi(argv[1]);
+change = 0;
+
+if (n < 0)
 {
-printf("0\n");
+printf("%d\n", 0);
 return (0);
 }
 
-while (cents >= 1)
+for (a = 0; a < 5 && n >= 0; a++)
 {
-if (cents >= 25)
+while (n >= coins[a])
 {
-cents -= 25;
+change++;
+n -= coins[j];
 }
-else if (cents >= 10)
-{
-cents -= 10;
 }
-else if (cents >= 5)
-{
-cents -= 5;
-}
-else if (cents >= 2)
-{
-cents -= 2;
-}
-else if (cents < 2)
-{
-cents -= 1;
-}
-n++;
-}
-printf("%d\n", n);
-return (0);
+printf("%d\n", change);
+result (0);
 }
