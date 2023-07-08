@@ -30,29 +30,24 @@ while (cents > 0)
 if (cents >= 25)
 {
 cents -= 25;
-n++;
 }
 else if (cents >= 10)
 {
 cents -= 10;
-n++;
 }
 else if (cents >= 5)
 {
 cents -= 5;
-n++;
 }
 else if (cents >= 2)
 {
 cents -= 2;
-n++;
 }
-else if (cents >= 1)
+else if (cents > 1)
 {
 cents -= 1;
-n++;
 }
-
+n++;
 }
 printf("%d\n", n);
 return (0);
