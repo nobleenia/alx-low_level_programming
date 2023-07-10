@@ -29,11 +29,11 @@ if (s2 == NULL)
 s2 = "";
 }
 
-int len1 = strlen(s1);
-int len2 = strlen(s2);
-int len_str = len1 + len2 + 1;
+len1 = strlen(s1);
+len2 = strlen(s2);
+len_str = len1 + len2 + 1;
 
-char *new_str = malloc(len_str * sizeof(char));
+new_str = malloc(len_str *sizeof(char));
 
 if (new_str == NULL)
 {
