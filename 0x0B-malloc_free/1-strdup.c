@@ -21,7 +21,7 @@ if (new_str == 0)
 {
 return (NULL);
 }
- 
+
 strcpy(new_str, str);
 
 return (new_str);
