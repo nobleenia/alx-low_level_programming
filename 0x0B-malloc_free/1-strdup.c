@@ -11,7 +11,7 @@ char *_strdup(char *str)
 {
 
 int l;
-char *nex_str;
+char *new_str;
 
 if (str == 0)
 {
