@@ -1,0 +1,42 @@
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+/**
+ * str_concat - concatenates two strings
+ * @s1: the first input string for concatenation
+ * @s2: teh second input string for concatenation
+ *
+ * Return: the new string
+ */
+char *str_concat(char *s1, char *s2)
+{
+int len1 = strlen(s1) + 1;
+int len2 = strlen(s2) + 1;
+int len_str = len1 + len2;
+
+char *new_str = malloc(len_str * sizeof(char));
+
+int i, j;
+
+if (s1 == '\0')
+{
+s1 = " ";
+}
+if (s2 == '\0')
+{
+s2 = " ";
+}
+
+for (i = 0; i < len1; i++)
+{
+new_str[i] = s1[i];
+}
+for (j = 0; j < len2; j++)
+{
+new_str[i + j] = s2[j];
+}
+
+return (new_str);
+}
