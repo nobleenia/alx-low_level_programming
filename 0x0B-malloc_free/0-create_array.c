@@ -17,7 +17,12 @@ char *arr = malloc(size * sizeof(char));
 
 if (size == 0)
 {
-return NULL;
+  return (NULL);
+}
+
+if (arr == NULL)
+{
+return (NULL)
 }
 
 for (; n < size; n++)
