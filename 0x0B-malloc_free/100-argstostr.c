@@ -7,7 +7,7 @@
  * @ac: first integer input
  * @av: second string input
  *
- * Return pointer to the new string or NULL for failure
+ * Return: pointer to the new string or NULL for failure
  */
 char *argstostr(int ac, char **av)
 {
