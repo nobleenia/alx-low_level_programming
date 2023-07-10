@@ -22,14 +22,14 @@ return (NULL);
 len_str = 0;
 for (i = 0; i < ac; i++)
 {
-for(j = 0; j < av[i][j]; j++)
+for (j = 0; j < av[i][j]; j++)
 {
 len_str++;
 }
 len_str++;
 }
 
-new_str = malloc((len_str + 1) *sizeof(char));
+new_str = malloc((len_str + 1) * sizeof(char));
 if (new_str == NULL)
 {
 return (NULL);
