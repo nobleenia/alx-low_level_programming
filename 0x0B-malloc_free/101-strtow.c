@@ -43,14 +43,14 @@ return (wrd);
 int count_wrd(char *str)
 {
 
-int wrd_cnt, n_wrd, i;
+  int wrd_cnt = 0;
+  int n_wrd =0;
+  int i;
 
 if (str == NULL || *str == '\0')
 {
 return (0);
 }
-wrd_cnt = 0;
-n_wrd = 0;
 
 for (i = 0; str[i] != '\0'; i++)
 {
@@ -64,6 +64,12 @@ else if (str[i] == ' ')
 n_wrd = 0;
 }
 }
+
+if (n_wrd == 1)
+{
+wrd_cnt++;
+}
+
 return (wrd_cnt);
 }
 
