@@ -44,7 +44,7 @@ int count_wrd(char *str)
 {
 
   int wrd_cnt = 0;
-  int n_wrd =0;
+  int n_wrd = 0;
   int i;
 
 if (str == NULL || *str == '\0')
