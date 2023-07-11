@@ -65,11 +65,6 @@ n_wrd = 0;
 }
 }
 
-if (n_wrd == 1)
-{
-wrd_cnt++;
-}
-
 return (wrd_cnt);
 }
 
