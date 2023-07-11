@@ -117,7 +117,7 @@ if (wrd[ind] == NULL)
 {
 for (j = 0; j < ind; j++)
 {
-free(wrd);
+free(wrd[j]);
 }
 free(wrd);
 return;
