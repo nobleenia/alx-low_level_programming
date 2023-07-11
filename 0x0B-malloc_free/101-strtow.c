@@ -43,9 +43,9 @@ return (wrd);
 int count_wrd(char *str)
 {
 
-  int wrd_cnt = 0;
-  int n_wrd = 0;
-  int i;
+int wrd_cnt = 0;
+int n_wrd = 0;
+int i;
 
 if (str == NULL || *str == '\0')
 {
@@ -126,7 +126,6 @@ return;
 strncpy(wrd[ind], &str[start], len);
 wrd[ind][len] = '\0';
 ind++;
-start = 0;
 }
 }
 wrd[ind] = NULL;
