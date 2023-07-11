@@ -38,7 +38,7 @@ return (wrd);
  * count_wrd - count the number of words in inoput string
  * @str: the input string
  *
- * Return number of words in string
+ * Return: number of words in string
  */
 int count_wrd(char *str)
 {
@@ -75,7 +75,7 @@ return (wrd_cnt);
  */
 char **assign_wrd(int wrd_cnt)
 {
-  char **wrd = malloc((wrd_cnt + 1) * sizeof(char *));
+char **wrd = malloc((wrd_cnt + 1) * sizeof(char *));
 if (wrd == NULL)
 {
 return (NULL);
@@ -105,7 +105,7 @@ for (i = 0; str[i] != '\0'; i++)
 if (str[i] != ' ' && !n_wrd)
 {
 n_wrd = 1;
-start = 1;
+start = i;
 }
 else if (str[i] == ' ' && n_wrd)
 {
@@ -125,6 +125,7 @@ return;
 strncpy(wrd[ind], &str[start], len);
 wrd[ind][len] = '\0';
 ind++;
+start = 0;
 }
 }
 wrd[ind] = NULL;
