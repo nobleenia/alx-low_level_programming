@@ -108,10 +108,10 @@ if (str[i] != ' ' && !n_wrd)
 n_wrd = 1;
 start = i;
 }
-else if (str[i] == ' ' && n_wrd)
+else if ((str[i] == ' ' || str[i + 1] == '\0') && n_wrd)
 {
 n_wrd = 0;
-len = i - start;
+len = (str[i] == ' ') ? i - start : i - start + 1;
 wrd[ind] = malloc((len + 1) * sizeof(char));
 
 if (wrd[ind] == NULL)
