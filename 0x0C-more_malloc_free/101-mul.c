@@ -3,8 +3,37 @@
 #include <stdlib.h>
 #include <ctype.h>
 
-int isNumber(char *str);
-int multiply(int num1, int num2);
+/**
+ * isNumber: check if input is a digit
+ * @str: the input character
+ *                                                                                                         * Return: 1 for digit, 0 for non-digit
+ */
+int isNumber(char *str)
+{
+
+int i;
+for (i = 0; str[i] != '\0'; i++)
+{
+if (!isdigit(str[i]))
+{
+return (0);
+}
+}
+return (1);
+}
+
+/**
+ * multiply - product of input values
+ * @num1: the first input integer
+ * @num2: the second input integer
+ *
+ * Return: product of input
+ */
+int multiply(int num1, int num2)
+{
+int product = num1 * num2;
+return (product);
+}
 
 /**
  * main - start of main program
@@ -41,36 +70,4 @@ product = multiply(num1, num2);
 printf("%d\n", product);
 
 return (0);
-}
-
-/**
- * isNumber: check if input is a digit
- * @str: the input character
- *
- * Return: 1 for digit, 0 for non-digit
- */
-int isNumber(char *str)
-{
-int i;
-for (i = 0; str[i] != '\0'; i++)
-{
-if (!isdigit(str[i]))
-{
-return (0);
-}
-}
-return (1);
-}
-
-/**
- * multiply - product of input values
- * @num1: the first input integer
- * @num2: the second input integer
- *
- * Return: product of input
- */
-int multiply(int num1, int num2)
-{
-int product = num1 * num2;
-return (product);
 }
