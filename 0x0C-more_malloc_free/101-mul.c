@@ -43,9 +43,7 @@ return (0);
  */
 void Errors()
 {
-char error[] = "Error\n";
-int len = sizeof(error) - 1;
-write(2, error, len);
+printf("Error\n");
 exit(98);
 }
 
@@ -59,7 +57,7 @@ int isNumber(char *s)
 {
 while (*s)
 {
-if ((*s < '0') || (*s > '9'))
+if (!isdigit(*s))
 {
 return (0);
 }
@@ -76,74 +74,61 @@ return (1);
  */
 void product(char *num1, char *num2)
 {
-int len1 = 0;
-int len2 = 0;
-int a, b, num_1, num_2, add, sum, k;
+int len1 = strlen(num1);
+int len2 = strlen(num2);
+int total_len = len1 + len2;
 int *res;
-
+int i, j, start, idx, carry, digit1, digit2, product;
+ 
 char *output;
 
-while (num1[len1])
-{
-len1++;
-}
-while (num2[len2])
-{
-len2++;
-}
-
-res = malloc((len1 + len2) * sizeof(int));
+res = malloc(total_len * sizeof(int));
 if (res == NULL)
 {
 Errors();
 }
 
-for (a = 0; a < len1 + len2; a++)
+for (i = 0; i < total_len; i++)
 {
-res[a] = 0;
+res[i] = 0;
 }
 
-for (a = len1 - 1; a >= 0; a--)
+for (i = len1 - 1; i >= 0; i--)
 {
-num_1 = num1[a] - '0';
-add = 0;
+carry = 0;
+digit1 = num1[i] - '0';
 
-for (b = len2 - 1; b >= 0; b--)
+for (j = len2 - 1; j >= 0; j--)
 {
-num_2 = num2[b] - '0';
-sum = num_1 * num_2 + res[a + b + 1] + add;
-add = sum / 10;
-res[a + b + 1] = sum % 10;
+digit2 = num2[j] - '0';
+product = digit1 * digit2 + res[i + j + 1] + carry;
+carry = product / 10;
+res[i + j + 1] = product % 10;
 }
 
-if (add > 0)
-{
-res[a + b + 1] += add;
-}
+res[i] += carry;
 }
 
-a = 0;
-while (res[a] == 0 && a < len1 + len2 - 1)
+start = 0;
+while (start < total_len - 1 && res[start] == 0)
 {
-a++;
+start++;
 }
 
-output = malloc((len1 + len2 - a + 1) * sizeof(char));
+output = malloc((total_len - start + 1) * sizeof(char));
 if (output == NULL)
 {
 Errors();
 }
 
-k = 0;
-while (a < len1 + len2)
+idx = 0;
+for (i = start; i < total_len; i++)
 {
-output[k] = res[a] + '0';
-a++;
-k++;
+output[idx++] = res[i] + '0';
 }
-output[k] = '\n';
+output[idx] = '\n';
 
-write(1, output, k + 1);
+write(1, output, idx + 1);
 
 free(res);
 free(output);
