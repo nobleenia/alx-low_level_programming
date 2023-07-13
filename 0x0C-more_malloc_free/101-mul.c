@@ -18,7 +18,8 @@ void product(char *num1, char *num2);
  */
 int main(int argc, char *argv[])
 {
-char *num_1, *num_2;
+char *num_1;
+char *num_2;
 
 if (argc != 3)
 {
@@ -40,6 +41,7 @@ return (0);
 /**
  * Errors - prints error message
  *
+ * Return: void but exits with 98
  */
 void Errors()
 {
@@ -71,6 +73,7 @@ return (1);
  * @num1: the first input characters
  * @num2: the second input characters
  *
+ * Return: void
  */
 void product(char *num1, char *num2)
 {
