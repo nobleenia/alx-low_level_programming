@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
@@ -13,7 +14,7 @@ void product(char *num1, char *num2);
  * @argc: argument counter
  * @argv: argument vector array
  *
- * Return: 98 for error and 0 if successful
+ * Return: 0 if successful
  */
 int main(int argc, char *argv[])
 {
@@ -91,7 +92,7 @@ while (num2[len2])
 len2++;
 }
 
-res = malloc((len1 + len2) *sizeof(int));
+res = malloc((len1 + len2) * sizeof(int));
 if (res == NULL)
 {
 Errors();
@@ -127,7 +128,7 @@ while (res[a] == 0 && a < len1 + len2 - 1)
 a++;
 }
 
-output = malloc((len1 + len2 - a + 1) *sizeof(char));
+output = malloc((len1 + len2 - a + 1) * sizeof(char));
 if (output == NULL)
 {
 Errors();
