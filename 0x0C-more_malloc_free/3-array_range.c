@@ -19,7 +19,8 @@ if (min > max)
 {
 return (NULL);
 }
-n = (max - min) +1;
+
+n = (max - min) + 1;
 
 new_arr = malloc(n * sizeof(int));
 if (new_arr == NULL)
