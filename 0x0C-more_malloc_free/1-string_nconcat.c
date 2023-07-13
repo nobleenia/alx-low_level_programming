@@ -38,9 +38,9 @@ return (NULL);
 
 for (i = 0; i < len1; i++)
 {
-new_str[i++] = s1[i];
+new_str[i] = s1[i];
 }
-for (j = 0; j < len2 && s2[j] != '\0'; j++)
+for (j = 0; j < len2; j++)
 {
 new_str[i++] = s2[j];
 }
