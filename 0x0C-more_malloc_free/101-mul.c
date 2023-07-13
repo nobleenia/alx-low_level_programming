@@ -121,7 +121,7 @@ start++;
 output = malloc((total_len - start + 1) * sizeof(char));
 if (output == NULL)
 {
-Errors();
+errors();
 }
 
 idx = 0;
