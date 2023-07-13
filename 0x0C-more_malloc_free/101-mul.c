@@ -5,7 +5,7 @@
 #include <string.h>
 #include <unistd.h>
 
-void Errors();
+void errors();
 int isNumber(char *s);
 void product(char *num1, char *num2);
 
@@ -23,14 +23,14 @@ char *num_2;
 
 if (argc != 3)
 {
-Errors();
+errors();
 }
 
 num_1 = argv[1];
 num_2 = argv[2];
 if (!isNumber(num_1) || !isNumber(num_2))
 {
-Errors();
+errors();
 }
 
 product(num_1, num_2);
@@ -39,11 +39,11 @@ return (0);
 }
 
 /**
- * Errors - prints error message
+ * errors - prints error message
  *
  * Return: void but exits with 98
  */
-void Errors()
+void errors()
 {
 printf("Error\n");
 exit(98);
