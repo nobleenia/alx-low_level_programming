@@ -8,7 +8,7 @@ int multiply(int num1, int num2);
 
 /**
  * main - start of main program
- * @args: argument counter
+ * @argc: argument counter
  * @argv: argument vector array
  *
  * Return: 98 for error and 0 if successful
@@ -52,12 +52,13 @@ return (0);
 int isNumber(char *str)
 {
 int i;
-for (i = 0; str[i] != '\0'; i++)
+while (str[i])
 {
-if (!isdigit(str[i]))
+if (str[i] < '0' || str[i] > '9')
 {
 return (0);
 }
+i++;
 }
 return (1);
 }
