@@ -23,15 +23,15 @@ char *num_2;
 if (argc != 3)
 {
 printf("Error\n");
-return (98);
+exit(98);
 }
 num_1 = argv[1];
 num_2 = argv[2];
 
-if ((!isNumber(num_1)) || (!isNumber(num_2)))
+if (!isNumber(num_1) || !isNumber(num_2))
 {
 printf("Error\n");
-return (98);
+exit(98);
 }
 num1 = atoi(num_1);
 num2 = atoi(num_2);
@@ -52,13 +52,12 @@ return (0);
 int isNumber(char *str)
 {
 int i;
-while (str[i])
+for (i = 0; str[i] != '\0'; i++)
 {
-if (str[i] < '0' || str[i] > '9')
+if (!isdigit(str[i]))
 {
 return (0);
 }
-i++;
 }
 return (1);
 }
