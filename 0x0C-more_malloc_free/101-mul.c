@@ -39,9 +39,7 @@ return (0);
 }
 
 /**
- * errors - prints error message
- *
- * Return: void but exits with 98
+ * errors - prints error message and exits with 98
  */
 void errors()
 {
@@ -72,8 +70,6 @@ return (1);
  * product - multiplies the input characters
  * @num1: the first input characters
  * @num2: the second input characters
- *
- * Return: void
  */
 void product(char *num1, char *num2)
 {
@@ -85,7 +81,7 @@ int i, j, start, idx, carry, digit1, digit2, product;
  
 char *output;
 
-res = malloc(total_len * sizeof(int));
+res = malloc(total_len *sizeof(int));
 if (res == NULL)
 {
 errors();
