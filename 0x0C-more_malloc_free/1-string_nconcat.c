@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- * string_nconcat - concatenates two strings to the value of n
+ * string_nconcat - concatenates two strings to n length
  * @s1: the first string input
  * @s2: the second string input
  * @n: the length to be concatenated to for s2
@@ -30,7 +30,7 @@ len1 = strlen(s1);
 len2 = strlen(s2);
 len_str = len1 + ((len2 < n) ? len2 : n) + 1;
 
-new_str = malloc(len_str * sizeof(char));
+new_str = malloc(len_str *sizeof(char));
 if (new_str == NULL)
 {
 return (NULL);
