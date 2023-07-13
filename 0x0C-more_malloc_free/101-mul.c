@@ -38,6 +38,7 @@ return (0);
 
 /**
  * Errors - prints error message
+ *
  */
 void Errors()
 {
@@ -70,6 +71,7 @@ return (1);
  * product - multiplies the input characters
  * @num1: the first input characters
  * @num2: the second input characters
+ *
  */
 void product(char *num1, char *num2)
 {
@@ -89,7 +91,7 @@ while (num2[len2])
 len2++;
 }
 
-res = malloc((len1 + len2) * sizeof(int));
+res = malloc((len1 + len2) *sizeof(int));
 if (res == NULL)
 {
 Errors();
@@ -125,7 +127,7 @@ while (res[a] == 0 && a < len1 + len2 - 1)
 a++;
 }
 
-output = malloc((len1 + len2 - a + 1) * sizeof(char));
+output = malloc((len1 + len2 - a + 1) *sizeof(char));
 if (output == NULL)
 {
 Errors();
