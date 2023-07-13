@@ -88,7 +88,7 @@ char *output;
 res = malloc(total_len * sizeof(int));
 if (res == NULL)
 {
-Errors();
+errors();
 }
 
 for (i = 0; i < total_len; i++)
