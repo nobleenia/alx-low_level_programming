@@ -18,7 +18,7 @@ if (new_size == 0 && ptr != NULL)
 free(ptr);
 return (NULL);
 }
-if (ptr ==NULL)
+if (ptr == NULL)
 {
 ptr = malloc(new_size);
 }
