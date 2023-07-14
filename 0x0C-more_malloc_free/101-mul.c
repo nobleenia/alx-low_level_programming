@@ -5,7 +5,7 @@
 #include <string.h>
 #include <unistd.h>
 
-void errors();
+void errors(void);
 int isNumber(char *s);
 void product(char *num1, char *num2);
 
@@ -41,7 +41,7 @@ return (0);
 /**
  * errors - prints error message and exits with 98
  */
-void errors()
+void errors(void)
 {
 printf("Error\n");
 exit(98);
@@ -78,10 +78,10 @@ int len2 = strlen(num2);
 int total_len = len1 + len2;
 int *res;
 int i, j, start, idx, carry, digit1, digit2, product;
- 
+
 char *output;
 
-res = malloc(total_len *sizeof(int));
+res = malloc(total_len * sizeof(int));
 if (res == NULL)
 {
 errors();
@@ -100,7 +100,7 @@ digit1 = num1[i] - '0';
 for (j = len2 - 1; j >= 0; j--)
 {
 digit2 = num2[j] - '0';
-product = digit1 * digit2 + res[i + j + 1] + carry;
+product = digit1 *digit2 + res[i + j + 1] + carry;
 carry = product / 10;
 res[i + j + 1] = product % 10;
 }
