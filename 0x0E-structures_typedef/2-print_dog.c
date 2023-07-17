@@ -25,7 +25,7 @@ else
 printf("Name: %s\n", d->name);
 }
 
-if (d->age == NULL)
+if (d->age < 0)
 {
 printf("Age: (nil)\n");
 }
