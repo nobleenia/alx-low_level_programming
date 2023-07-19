@@ -20,11 +20,11 @@ operand_func op_s[] = {
 };
 
 int n = 0;
-while (op_s[n].operand != NULL)
+while (n < 5)
 {
-if (strcmp(s, op_s[n].operand) == 0)
+if (*(op_s[n]).operand == *s && *(s + 1) == '\0')
 {
-return op_s[n].f;
+return (op_s[n].f);
 }
 n++;
 }
