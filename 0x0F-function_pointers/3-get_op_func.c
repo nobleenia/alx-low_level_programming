@@ -10,23 +10,24 @@
 int(*get_op_func(char *s))(int, int)
 {
 
-operand_func op_s[] = {
-			{"+", op_add},
-			{"-", op_sub},
-			{"*", op_mul},
-			{"/", op_div},
-			{"%", op_mod},
-			{NULL, NULL}
+op_t ops[] = {
+{"+", op_add},
+{"-", op_sub},
+{"*", op_mul},
+{"/", op_div},
+{"%", op_mod},
+{NULL, NULL}
 };
+int i = 0;
 
-int n = 0;
-while (n < 5)
+while (ops[i].op != NULL)
 {
-if (*(op_s[n]).operand == *s && *(s + 1) == '\0')
+if (strcmp(ops[i].op, s) == 0)
 {
-return (op_s[n].f);
+return (ops[i].f);
 }
-n++;
+
+i++;
 }
 
 return (NULL);
