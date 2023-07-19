@@ -22,7 +22,7 @@ operand_func op_s[] = {
 int n = 0;
 while (n < 5)
 {
-if (*(op_s[n]).op == *s && *(s + 1) == '\0')
+if (*(op_s[n]).operand == *s && *(s + 1) == '\0')
 {
 return (op_s[n].f);
 }
