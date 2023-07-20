@@ -4,13 +4,24 @@
 
 /**
  * sum_them_all - sum all the arguments in the variadic function
- * @n: first input of the function
+ * @separator: string to be printed between numbers
+ * @n: number of integers passed to the function
  *
- *
- *
- * Return: an integer containing the sum
+ * Return: void
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
+va_list input;
+unsigned int i;
 
+for (i = 0; i < n; i++)
+{
+printf("%d", va_arg (input, int));
+if (i != (n - 1) && separator != NULL)
+{
+printf("%s", separator);
+}
+}
+va_end(input);
+printf("\n");
 }
