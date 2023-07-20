@@ -24,22 +24,15 @@ while (format && format[n])
 switch (format[n])
 {
 case 'c':
-{
 printf("%c", va_arg(inputs, int));
 break;
-}
 case 'i':
-{
 printf("%d", va_arg(inputs, int));
 break;
-}
 case 'f':
-{
 printf("%f", va_arg(inputs, double));
 break;
-}
 case 's':
-{
 str = va_arg(inputs, char *);
 if (str == NULL)
 {
@@ -47,13 +40,10 @@ str = "(nil)";
 }
 printf("%s", str);
 break;
-}
 
 default:
-{
-space = ' ';
+space = 0;
 break;
-}
 }
 
 if (format[n + 1] && space)
