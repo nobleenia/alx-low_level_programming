@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * sum_them_all - sum all the arguments in the variadic function
+ * print_numbers - sum all the arguments in the variadic function
  * @separator: string to be printed between numbers
  * @n: number of integers passed to the function
  *
