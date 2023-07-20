@@ -32,7 +32,7 @@ main_func = (unsigned char *)main;
 for (n = 0; n < bytes; n++)
 {
 
-printf("%02x\n", main_func[n]);
+printf("%02x", main_func[n]);
 if (n < bytes - 1)
 {
 printf(" ");
