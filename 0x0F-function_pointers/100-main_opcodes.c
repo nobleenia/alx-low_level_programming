@@ -16,27 +16,28 @@ unsigned char *main_func;
 
 if (argc != 2)
 {
-printf("Error\n")
-return(1);
+printf("Error\n");
+exit(1);
 }
 
 bytes = atoi(argv[1]);
 if (bytes < 0)
 {
 printf("Error\n");
-return (2);
+exit(2);
 }
 
 main_func = (unsigned char *)main;
+
 for (n = 0; n < bytes; n++)
 {
-printf("%02x", main_func[n]);
+
+printf("%02x\n", main_func[n]);
 if (n < bytes - 1)
 {
 printf(" ");
 }
 }
 printf("\n");
-
 return (0);
 }
