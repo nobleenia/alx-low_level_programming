@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * opp_add - sums two integers
+ * op_add - sums two integers
  * @a: first integer input
  * @b: second integer input
  *
