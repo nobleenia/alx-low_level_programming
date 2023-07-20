@@ -14,7 +14,7 @@ void print_all(const char * const format, ...)
 va_list inputs;
 int n;
 char *str;
-char space = ",";
+char space = ',';
 
 va_start(inputs, format);
 
@@ -54,6 +54,7 @@ space = 0;
 break;
 }
 }
+
 if (format[n + 1] && space)
 {
 printf("%c ", space);
