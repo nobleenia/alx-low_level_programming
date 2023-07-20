@@ -1,4 +1,3 @@
-The first of many to come in C programming language from this prospective software engineer
 + ALX LOW LEVEL PROGRAMMING
 0. 0x00-hello_world
 1. 0x01-variables_if_else_while
@@ -16,3 +15,4 @@ The first of many to come in C programming language from this prospective softwa
 13. 0x0D. C - Preprocessor
 14. 0x0E. C - Structures, typedef
 15. 0x0F. C - Function pointers
+16. 0x10. C - Variadic functions
