@@ -48,7 +48,7 @@ break;
 
 if (format[n + 1] && space)
 {
-printf("%c ", space);
+printf("%c", space);
 }
 n++;
 }
