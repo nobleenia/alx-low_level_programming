@@ -39,7 +39,6 @@ case 's':
 print_s(inputs, space);
 break;
 default:
-space = '\0';
 break;
 }
 
