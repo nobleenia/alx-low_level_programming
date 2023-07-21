@@ -12,12 +12,13 @@ void print_all(const char * const format, ...)
 {
 
 va_list inputs;
-int n = 0;
+int n;
 char *str;
 char space = ',';
 
 va_start(inputs, format);
 
+n = 0;
 while (format && format[n])
 {
 switch (format[n])
