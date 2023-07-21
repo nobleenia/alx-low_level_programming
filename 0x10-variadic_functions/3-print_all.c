@@ -38,6 +38,7 @@ printf("%s%s", sep, str);
 }
 break;
 default:
+sep = '\0';
 break;
 }
 
