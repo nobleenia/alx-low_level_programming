@@ -33,8 +33,9 @@ break;
 case 's':
 str = va_arg(inputs, char *);
 if (str == NULL)
+{
 str = "(nil)";
-
+}
 printf("%s", str);
 break;
 
@@ -44,8 +45,9 @@ break;
 }
 
 if (format[n + 1] && space)
+{
 printf("%c ", space);
-
+}
 n++;
 }
 
