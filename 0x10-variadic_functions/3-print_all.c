@@ -10,14 +10,11 @@
  */
 void print_all(const char * const format, ...)
 {
-
 va_list inputs;
 int n;
 char *str;
 char space = ',';
-
 va_start(inputs, format);
-
 n = 0;
 while (format && format[n])
 {
@@ -40,19 +37,16 @@ str = "(nil)";
 }
 printf("%s", str);
 break;
-
 default:
-space = 0;
+space = '\0';
 break;
 }
-
-if (format[n + 1] && space)
+if (format[n + 1] && space != '\0')
 {
 printf("%c ", space);
 }
 n++;
 }
-
 va_end(inputs);
 printf("\n");
 }
