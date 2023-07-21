@@ -13,7 +13,8 @@ void print_all(const char * const format, ...)
 
 va_list inputs;
 int n = 0;
-char *str, char space = ',';
+char *str;
+char space = ',';
 
 va_start(inputs, format);
 
