@@ -11,7 +11,7 @@ void print_all(const char * const format, ...)
 
 va_list inputs;
 int n = 0;
-char *sep = "";
+static char *sep = "";
 
 va_start(inputs, format);
 
