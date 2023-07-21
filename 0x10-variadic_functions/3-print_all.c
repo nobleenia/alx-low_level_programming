@@ -46,7 +46,7 @@ n++;
 continue;
 }
 
-if (format[n + 1] && != '\0')
+if (format[n + 1] && space != '\0')
 {
 printf(", ");
 }
