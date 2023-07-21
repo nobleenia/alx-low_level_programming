@@ -45,9 +45,9 @@ space = '\0';
 break;
 }
 
- if (format[n + 1] && space == ',')
+if (format[n + 1] && space != '\0')
 {
-printf(", ");
+printf("%c ", space);
 }
 
 n++;
