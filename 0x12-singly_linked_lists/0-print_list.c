@@ -1,6 +1,4 @@
 #include "lists.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
  * print_list - prints elements in the linked list
@@ -15,9 +13,9 @@ size_t count = 0;
 while (h != NULL)
 {
 if (!h->str == NULL)
-printf("[0] (nil)\n");
+printf("[%d] %s\n", 0, "(nil)");
 else
-printf("[%u] %s\n", h->len, h->str);
+printf("[%d] %s\n", h->len, h->str);
 
 h = h->next;
 count++;
