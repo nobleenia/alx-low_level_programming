@@ -16,3 +16,4 @@
 14. 0x0E. C - Structures, typedef
 15. 0x0F. C - Function pointers
 16. 0x10. C - Variadic functions
+17. 0x12. C - Singly linked lists
