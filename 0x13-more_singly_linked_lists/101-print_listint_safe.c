@@ -47,7 +47,7 @@ const listint_t **re(const listint_t **list, size_t size, const listint_t *new)
 const listint_t **new_list;
 size_t i;
 
-new_list = malloc(size * (sizeof(listint_t));
+new_list = malloc(size * (sizeof(listint_t)));
 if (new_list == NULL)
 {
 free(list);
@@ -59,5 +59,5 @@ new_list[i] = list[i];
 }
 new_list[i] = new;
 free(list);
-return(new_list);
+return (new_list);
 }

@@ -1,4 +1,4 @@
-#include "mists.h"
+#include "lists.h"
 
 /**
  * free_listint_safe - frees a linked list
@@ -30,7 +30,7 @@ len++;
 else
 {
 free(*h);
-*h = NULL:
+ *h = NULL;
 len++;
 break;
 }
