@@ -35,7 +35,7 @@ if (count == idx - 1)
 {
 new_node->next = temp->next;
 temp->next = new_node;
-return (new_mode);
+return (new_node);
 }
 else
 {
