@@ -22,7 +22,7 @@ new_item->next = NULL;
 
 if (*head == NULL)
 {
-head = new_item;
+*head = new_item;
 return (new_item);
 }
 
