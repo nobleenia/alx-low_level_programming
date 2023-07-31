@@ -17,5 +17,5 @@ while (temp && n < index)
 temp = temp->next;
 n++;
 }
-return ((temp ? temp : NULL);
+return (temp ? temp : NULL);
 }
