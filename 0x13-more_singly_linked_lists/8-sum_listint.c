@@ -4,7 +4,7 @@
  * sum_listint - sums all the data of the linked list
  * @head: the first node in the linked list
  *
- * Return the value of the sum
+ * Return: the value of the sum
  */
 int sum_listint(listint_t *head)
 {
