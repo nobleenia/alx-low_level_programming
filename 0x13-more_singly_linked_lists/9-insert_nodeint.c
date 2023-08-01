@@ -7,7 +7,7 @@
  * @idx: index of the list where the new node should be added
  * @n: data to be inserted
  *
- * Return: NULL for empty list or pointer to new node 
+ * Return: NULL for empty list or pointer to new node
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
