@@ -12,9 +12,10 @@ size_t ret_val = 0;
 
 while (h)
 {
-printf("%d\n", h->n);
+printf("%d\n", (h->n));
 ret_val++;
 h = h->next;
 }
+
 return (ret_val);
 }
