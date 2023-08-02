@@ -19,7 +19,7 @@ for (i = 0; i < num; i++)
 {
 if (head == list[i])
 {
-printf("->[%p] %d\n", (void *)head, head->n);
+printf("-> [%p] %d\n", (void *)head, head->n);
 free(list);
 return (num);
 }
