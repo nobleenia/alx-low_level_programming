@@ -58,6 +58,6 @@ for (i = 0; i < size - 1; i++)
 new_list[i] = list[i];
 }
 new_list[i] = new;
-
+free(list);
 return (new_list);
 }
