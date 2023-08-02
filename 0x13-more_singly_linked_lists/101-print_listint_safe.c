@@ -26,7 +26,7 @@ return (num);
 }
 num++;
 list = re(list, num, head);
-printf("[%p] %d\n", (void *)head, head->n);
+printf("-> [%p] %d\n", (void *)head, head->n);
 head = head->next;
 }
 free(list);
@@ -47,7 +47,7 @@ const listint_t **re(const listint_t **list, size_t size, const listint_t *new)
 const listint_t **new_list;
 size_t i;
 
-new_list = malloc((size + 1) * sizeof(listint_t *));
+new_list = malloc(size * sizeof(listint_t *));
 if (new_list == NULL)
 {
 free(list);
