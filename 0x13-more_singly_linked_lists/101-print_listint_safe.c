@@ -1,6 +1,6 @@
 #include "lists.h"
 
-const listint_t **re(const listint_t **list, size_t size, const listint_t *new);
+size_t listint_t_len (const listint_t *head);
 
 /**
  * print_listint_safe - prints a linked list
@@ -10,54 +10,63 @@ const listint_t **re(const listint_t **list, size_t size, const listint_t *new);
  */
 size_t print_listint_safe(const listint_t *head)
 {
-size_t i, num = 0;
-const listint_t **list = NULL;
+size_t num, idx = 0;
+num = listint_t_len(head);
 
-while (head != NULL)
+if (num == 0)
 {
-for (i = 0; i < num; i++)
+for (; head != NULL; num++)
 {
-if (head == list[i])
-{
-printf("->[%p] %d\n", (void *)head, head->n);
-free(list);
-return (num);
-}
-}
-num++;
-list = re(list, num, head);
 printf("[%p] %d\n", (void *)head, head->n);
 head = head->next;
 }
-free(list);
+}
+else
+{
+for (idx = 0; idx < num; idx++)
+{
+printf("[%p] %d\n", (void *)head, head->n);
+head = head->next;
+}
+printf("-> [%p] %d\n", (void *)head, head->n);
+}
 return (num);
 }
 
 /**
- * re - reallocates memory for an array of pointers
- * to the nodes in a linked list
- * @list: the old list to append
- * @size: size of the new list
- * @new: new node to add to the list
+ * listint_t_len - counts the number of unique nodes in a linked list
+ * @head: pointer to the first node of the linked list
  *
- * Return: pointer to the new list
+ * Return: number of nodes, 0 for failure
  */
-const listint_t **re(const listint_t **list, size_t size, const listint_t *new)
+size_t listint_t_len(const listint_t *head)
 {
-const listint_t **new_list;
-size_t i;
+const listint_t *slow, *fast;
+size_t num = 1;
 
-new_list = malloc(size * sizeof(listint_t*));
-if (new_list == NULL)
+if (head == NULL || head->next == NULL)
 {
-free(list);
-exit(98);
+return (0);
 }
-for (i = 0; i < size - 1; i++)
+slow = head->next;
+fast = (head->next)->next;
+
+while (fast)
 {
-new_list[i] = list[i];
+if (slow == fast)
+{
+slow = head;
+while (slow != fast)
+{
+num++;
+slow = slow->next;
+fast = fast->next;
 }
-new_list[i] = new;
-free(list);
-return (new_list);
+slow = slow->next;
+return (num);
+}
+slow = slow->next;
+fast = (fast->next)->next;
+}
+return (0);
 }
