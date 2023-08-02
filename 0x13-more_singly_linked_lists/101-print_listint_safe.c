@@ -1,6 +1,6 @@
 #include "lists.h"
 
-size_t listint_t_len (const listint_t *head);
+const listint_t **re(const listint_t **list, size_t size, const listint_t *new);
 
 /**
  * print_listint_safe - prints a linked list
@@ -10,63 +10,54 @@ size_t listint_t_len (const listint_t *head);
  */
 size_t print_listint_safe(const listint_t *head)
 {
-size_t num, idx = 0;
-num = listint_t_len(head);
+size_t i, num = 0;
+const listint_t **list = NULL;
 
-if (num == 0)
+while (head != NULL)
 {
-for (; head != NULL; num++)
+for (i = 0; i < num; i++)
 {
+if (head == list[i])
+{
+printf("->[%p] %d\n", (void *)head, head->n);
+free(list);
+return (num);
+}
+}
+num++;
+list = re(list, num, head);
 printf("[%p] %d\n", (void *)head, head->n);
 head = head->next;
 }
-}
-else
-{
-for (idx = 0; idx < num; idx++)
-{
-printf("[%p] %d\n", (void *)head, head->n);
-head = head->next;
-}
-printf("-> [%p] %d\n", (void *)head, head->n);
-}
+free(list);
 return (num);
 }
 
 /**
- * listint_t_len - counts the number of unique nodes in a linked list
- * @head: pointer to the first node of the linked list
+ * re - reallocates memory for an array of pointers
+ * to the nodes in a linked list
+ * @list: the old list to append
+ * @size: size of the new list
+ * @new: new node to add to the list
  *
- * Return: number of nodes, 0 for failure
+ * Return: pointer to the new list
  */
-size_t listint_t_len(const listint_t *head)
+const listint_t **re(const listint_t **list, size_t size, const listint_t *new)
 {
-const listint_t *slow, *fast;
-size_t num = 1;
+const listint_t **new_list;
+size_t i;
 
-if (head == NULL || head->next == NULL)
+new_list = malloc(size * sizeof(listint_t*));
+if (new_list == NULL)
 {
-return (0);
+free(list);
+exit(98);
 }
-slow = head->next;
-fast = (head->next)->next;
-
-while (fast)
+for (i = 0; i < size - 1; i++)
 {
-if (slow == fast)
-{
-slow = head;
-while (slow != fast)
-{
-num++;
-slow = slow->next;
-fast = fast->next;
+new_list[i] = list[i];
 }
-slow = slow->next;
-return (num);
-}
-slow = slow->next;
-fast = (fast->next)->next;
-}
-return (0);
+new_list[i] = new;
+free(list);
+return (new_list);
 }
