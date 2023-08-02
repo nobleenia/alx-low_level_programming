@@ -5,7 +5,6 @@ const listint_t **re(const listint_t **list, size_t size, const listint_t *new);
 /**
  * print_listint_safe - prints a linked list
  * @head: the first node in the linked list
- *
  * Return: the number of nodes in the linked list
  */
 size_t print_listint_safe(const listint_t *head)
@@ -39,7 +38,6 @@ return (num);
  * @list: the old list to append
  * @size: size of the new list
  * @new: new node to add to the list
- *
  * Return: pointer to the new list
  */
 const listint_t **re(const listint_t **list, size_t size, const listint_t *new)
