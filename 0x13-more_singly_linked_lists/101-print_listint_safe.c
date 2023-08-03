@@ -1,6 +1,6 @@
 #include "lists.h"
 
-const listint_t **re(const listint_t **list, size_t size, const listint_t *new);
+const listint_t **r(const listint_t **list, size_t size, const listint_t *new);
 
 /**
  * print_listint_safe - prints a linked list
@@ -24,7 +24,7 @@ return (num);
 }
 }
 num++;
-list = re(list, num, head);
+list = r(list, num, head);
 printf("[%p] %d\n", (void *)head, head->n);
 head = head->next;
 }
@@ -40,7 +40,7 @@ return (num);
  * @new: new node to add to the list
  * Return: pointer to the new list
  */
-const listint_t **re(const listint_t **list, size_t size, const listint_t *new)
+const listint_t **r(const listint_t **list, size_t size, const listint_t *new)
 {
 const listint_t **new_list;
 size_t i;
