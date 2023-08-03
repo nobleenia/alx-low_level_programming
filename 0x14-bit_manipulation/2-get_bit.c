@@ -9,21 +9,16 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-unsigned long int max = 0x01;
+int ret_val;
 
-max <<= index;
+unsigned int size_uli = sizeof(unsigned long int) * 8;
 
-if (max == 0)
+if (index >= size_uli)
 {
 return (-1);
 }
 
-if (n & max)
-{
-return (1);
-}
-else
-{
-return (0);
-}
+ret_val = (n >> index) & 1;
+
+return (ret_val);
 }
