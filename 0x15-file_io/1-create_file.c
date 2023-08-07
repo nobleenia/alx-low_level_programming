@@ -10,8 +10,8 @@
 int create_file(const char *filename, char *text_content)
 {
 int file;
-ssize_t let_len;
-ssize_t let_print;
+int let_len;
+int let_print;
 
 if (!filename)
 {
