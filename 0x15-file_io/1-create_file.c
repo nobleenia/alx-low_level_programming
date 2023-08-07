@@ -18,7 +18,7 @@ if (!filename)
 return (-1);
 }
 
-file = open(filename, O_CREAT | O_RDONLY | O_TRUNC, 0600);
+file = open(filename, O_CREAT | O_WRONLY | O_TRUNC, S_IRUSR | S_IWUSR);
 
 if (file == -1)
 {
