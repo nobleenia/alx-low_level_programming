@@ -32,14 +32,15 @@ text_content = "";
 
 for (let_len = 0; text_content[let_len]; let_len++)
 {
+;
 }
 
 let_print = write(file, text_content, let_len);
-if (let_len == -1)
+if (let_print == -1)
 {
 return (-1);
 }
 
-close(file)
+close(file);
 return (1);
 }
