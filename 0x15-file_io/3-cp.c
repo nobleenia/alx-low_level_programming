@@ -18,6 +18,7 @@ int dst_file = open_dst_file(to_file);
 if (argc != 3)
 {
 print_error(97, "Usage: cp file_from file_to");
+exit(97);
 }
 
 copy_file(src_file, dst_file);
