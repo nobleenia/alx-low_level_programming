@@ -70,7 +70,7 @@ int open_dst_file(const char *file)
 int dst_file = open(file, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
 if (dst_file == -1)
 {
-dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file);
+dprintf(STDERR_FILENO, "Error: Can't write file to %s\n", file);
 exit(99);
 }
 return (dst_file);
