@@ -9,19 +9,35 @@
  */
 int main(int argc, char *argv[])
 {
-char *from_file = argv[1];
-char *to_file = argv[2];
 
-int src_file = open_src_file(from_file);
-int dst_file = open_dst_file(to_file);
+int src_file, dst_file;
+ssize_t num, len_print;
+char buffer[BUFFER_SIZE];
 
 if (argc != 3)
 {
-print_error(STDERR_FILENO, "Usage: cp file_from file_to");
+dprintf(STDERR_FILENO, "%s\n", "Usage: cp file_from file_to");
 exit(97);
 }
 
-copy_file(src_file, dst_file);
+src_file = open(argv[1], O_RDONLY);
+dst_file = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
+print_error(src_file, dst_file, argv);
+
+num = BUFFER_SIZE;
+while (num)
+{
+num = read(src_file, buffer, BUFFER_SIZE);
+if (num == -1)
+{
+print_error(-1, 0, argv);
+}
+len_print = write(dst_file, buffer, num);
+if (len_print == 1)
+{
+print_error(0, -1, argv);
+}
+}
 
 close_file(src_file);
 close_file(dst_file);
@@ -31,78 +47,23 @@ return (0);
 
 /**
  * print_error - prints the error message
- * @code: the exite code to be printed
- * @message: the error message to be printed
+ * @src_file: file to copy from
+ * @dst_file: file to copy to
+ * @argv: argument vector
  *
  * Return: void
  */
-void print_error(int code, const char *message)
+void print_error(int src_file, int dst_file, char *argv[])
 {
-dprintf(STDERR_FILENO, "%s\n", message);
-exit(code);
-}
-
-/**
- * open_src_file - opens the file to be copied from
- * @file: pointer to file to be copied
- *
- * Return: integer value of the file copied from
- */
-int open_src_file(const char *file)
-{
-int src_file = open(file, O_RDONLY);
 if (src_file == -1)
 {
-dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file);
+dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 exit(98);
 }
-return (src_file);
-}
-
-/**
- * open_dst_file - opens the file to be copied into
- * @file: pointer to the file to be copied to
- *
- * Return: integer value of the destination file
- */
-int open_dst_file(const char *file)
-{
-int dst_file = open(file, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
 if (dst_file == -1)
 {
-dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file);
+dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 exit(99);
-}
-return (dst_file);
-}
-
-/**
- * copy_file - copies contents from one file to the other
- * @src_file: the file to be dopied from
- * @dst_file: the file to be copied to
- *
- * Return: void
- */
-void copy_file(int src_file, int dst_file)
-{
-ssize_t len_read;
-ssize_t len_print;
-char buffer[BUFFER_SIZE];
-
-while ((len_read = read(src_file, buffer, BUFFER_SIZE)) > 0)
-{
-len_print = write(dst_file, buffer, len_read);
-if (len_print != len_read)
-{
-dprintf(STDERR_FILENO, "Error: Can't write to %s\n", dst_file);
-exit(99);
-}
-}
-
-if (len_read == -1)
-{
-dprintf(STDERR_FILENO, "Error: Can't read from file\n");
-exit(98);
 }
 }
 
@@ -114,7 +75,8 @@ exit(98);
  */
 void close_file(int file)
 {
-if (close(file) == -1)
+int close_err = close(file);
+if (close_err == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file);
 exit(100);
