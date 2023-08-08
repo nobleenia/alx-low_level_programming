@@ -12,14 +12,14 @@ int main(int argc, char *argv[])
 char *from_file = argv[1];
 char *to_file = argv[2];
 
+int src_file = open_src_file(from_file);
+int dst_file = open_dst_file(to_file);
+
 if (argc != 3)
 {
 print_error(97, "Usage: cp file_from file_to");
 exit(97);
 }
-
-int src_file = open_src_file(from_file);
-int dst_file = open_dst_file(to_file);
 
 copy_file(src_file, dst_file);
 
