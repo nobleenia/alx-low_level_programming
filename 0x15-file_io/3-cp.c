@@ -9,22 +9,17 @@
  */
 int main(int argc, char *argv[])
 {
-char *from_file;
-char *to_file;
+char *from_file = argv[1];
+char *to_file = argv[2];
 
-int src_file;
-int dst_file;
+int src_file = open_src_file(from_file);
+int dst_file = open_dst_file(to_file);
 
 if (argc != 3)
 {
-print_error(97, "Usage: cp file_from file_to");
+print_error(STDERR_FILENO, "Usage: cp file_from file_to");
 exit(97);
 }
-
-from_file = argv[1];
-to_file = argv[2];
-src_file = open_src_file(from_file);
-dst_file = open_dst_file(to_file);
 
 copy_file(src_file, dst_file);
 
@@ -75,7 +70,7 @@ int open_dst_file(const char *file)
 int dst_file = open(file, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
 if (dst_file == -1)
 {
-dprintf(STDERR_FILENO, "Error: Can't write file to %s\n", file);
+dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file);
 exit(99);
 }
 return (dst_file);
@@ -99,14 +94,14 @@ while ((len_read = read(src_file, buffer, BUFFER_SIZE)) > 0)
 len_print = write(dst_file, buffer, len_read);
 if (len_print != len_read)
 {
-dprintf(STDERR_FILENO, "Error: Write to destination file failed\n");
+dprintf(STDERR_FILENO, "Error: Can't write to %s\n", dst_file);
 exit(99);
 }
 }
 
 if (len_read == -1)
 {
-dprintf(STDERR_FILENO, "Error: Can't read from source file\n");
+dprintf(STDERR_FILENO, "Error: Can't read from file\n");
 exit(98);
 }
 }
