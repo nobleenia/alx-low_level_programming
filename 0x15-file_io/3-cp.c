@@ -33,7 +33,7 @@ if (num == -1)
 print_error(-1, 0, argv);
 }
 len_print = write(dst_file, buffer, num);
-if (len_print == 1)
+if (len_print == -1)
 {
 print_error(0, -1, argv);
 }
