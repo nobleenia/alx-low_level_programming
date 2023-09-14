@@ -3,6 +3,9 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+
+#define UNUSED(x) (void)(x);
 
 /**
  * struct dlistint_s - doubly linked list
