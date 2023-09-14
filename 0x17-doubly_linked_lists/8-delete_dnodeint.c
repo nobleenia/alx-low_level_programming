@@ -17,27 +17,26 @@ if (head == NULL || *head == NULL)
 return (-1);
 }
 
+current = *head;
+
 if (index == 0)
 {
-*head = (*head)->next;
-if (*head != NULL)
+*head = current->next;
+if (current->next != NULL)
 {
-(*head)->prev = NULL;
+current->next->prev = NULL;
 }
+free(current);
 return (1);
 }
 
-current = *head;
-
-while (current != NULL && counter != index)
+for (counter = 0; counter < index; counter++)
 {
-current = current->next;
-counter++;
-}
-
-if (current == NULL)
+if (current->next == NULL)
 {
 return (-1);
+}
+current = current->next;
 }
 
 current->prev->next = current->next;
