@@ -36,7 +36,7 @@ new_node = malloc(sizeof(dlistint_t));
 
 if (new_node == NULL)
 {
-  return (NULL);
+return (NULL);
 }
 
 new_node->n = n;
