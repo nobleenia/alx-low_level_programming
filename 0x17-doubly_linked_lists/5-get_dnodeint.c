@@ -21,8 +21,8 @@ count++;
 }
 else
 {
-return(current);
+return (current);
 }
 }
-return(NULL);
+return (NULL);
 }
