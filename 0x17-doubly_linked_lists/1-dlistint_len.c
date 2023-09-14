@@ -16,5 +16,5 @@ while (current != NULL)
 current = current->next;
 count++;
 }
-return(count);
+return (count);
 }
