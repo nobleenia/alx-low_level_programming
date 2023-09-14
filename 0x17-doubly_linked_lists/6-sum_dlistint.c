@@ -13,7 +13,7 @@ int sum = 0;
 
 while (current != NULL)
 {
-sum+=current->n;
+sum += current->n;
 current = current->next;
 }
 return (sum);
