@@ -17,7 +17,8 @@ int n;
 int temp;
 
 UNUSED(argc);
-pass_char = "A-CHRDw87lNS0E9B2TibgpnMVys5XzvtOGJcYLU+4mjW6fxqZeF3Qa1rPhdKIouk";
+pass_char = \
+"A-CHRDw87lNS0E9B2TibgpnMVys5XzvtOGJcYLU+4mjW6fxqZeF3Qa1rPhdKIouk";
 
 temp = (length ^ 59) & 63;
 password[0] = pass_char[temp];
