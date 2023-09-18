@@ -17,3 +17,8 @@
 15. 0x0F. C - Function pointers
 16. 0x10. C - Variadic functions
 17. 0x12. C - Singly linked lists
+18. 0x13. C - More singly linked lists
+19. 0x14. C - Bit manipulation
+20. 0x15. C - File I/O
+21. 0x17. C - Doubly linked lists
+22. 0x18. C - Dynamic libraries

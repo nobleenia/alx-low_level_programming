@@ -9,7 +9,6 @@
  */
 int main(int argc, char *argv[])
 {
-
 char password[7];
 char *pass_char;
 int length = strlen(argv[1]);
@@ -17,9 +16,7 @@ int n;
 int temp;
 
 UNUSED(argc);
-pass_char = \
-"A-CHRDw87lNS0E9B2TibgpnMVys5XzvtOGJcYLU+4mjW6fxqZeF3Qa1rPhdKIouk";
-
+pass_char = "A-CHRDw87lNS0E9B2TibgpnMVys5XzvtOGJcYLU+4mjW6fxqZeF3Qa1rPhdKIouk";
 temp = (length ^ 59) & 63;
 password[0] = pass_char[temp];
 
@@ -28,8 +25,8 @@ for (n = 0; n < length; n++)
 {
 temp += argv[1][n];
 }
-password[1] = pass_char[(temp ^ 79) & 63];
 
+password[1] = pass_char[(temp ^ 79) & 63];
 temp = 1;
 for (n = 0; n < length; n++)
 {
