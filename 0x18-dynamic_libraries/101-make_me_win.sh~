@@ -1,3 +1,0 @@
-#!/bin/bash
-wget -qP /tmp/alx-low_level_programming/0x18-dynamic_libraries
-export LD_PRELOAD="/tmp/inject_code.so"
