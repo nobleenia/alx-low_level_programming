@@ -1,4 +1,4 @@
-+ ALX LOW LEVEL PROGRAMMING
+# ALX LOW LEVEL PROGRAMMING
 0. 0x00-hello_world
 1. 0x01-variables_if_else_while
 2. 0x02-functions_nested_loops
@@ -22,3 +22,4 @@
 20. 0x15. C - File I/O
 21. 0x17. C - Doubly linked lists
 22. 0x18. C - Dynamic libraries
+23. 0x1A. C - Hash tables
