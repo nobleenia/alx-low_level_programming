@@ -1,0 +1,12 @@
+#include "search_algos.h"
+
+/**
+ * jump_list - searches for a value in a sorted list of
+ * integers using the Jump search algorithm
+ *
+ * @list: pointer to the head of the list to search in
+ * @size: number of nodes in list
+ * @value: value to search for
+ * Return: NULL if value not in head or head is NULL
+ */
+listint_t *jump_list(listint_t *list, size_t size, int value)
