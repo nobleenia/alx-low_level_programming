@@ -16,7 +16,7 @@ size_t i;
 
 if (array != NULL)
 {
-for(i = 0; i < size; i++)
+for (i = 0; i < size; i++)
 {
 printf("Value checked array[%lu] = [%d]\n", i, array[i]);
 if (array[i] == value)
