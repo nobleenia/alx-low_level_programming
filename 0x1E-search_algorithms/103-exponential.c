@@ -30,7 +30,7 @@ min = bound + 1;
 }
 else
 {
-min = size;
+min = size - 1;
 }
 printf("Value found between indexes [%lu] and [%lu]\n", bound / 2, min - 1);
 result = _binary_search(array, bound / 2,  min, value);

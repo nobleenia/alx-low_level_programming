@@ -29,7 +29,7 @@ high = high->next;
 printf("Value checked at index [%lu] = [%d]\n", high->index, high->n);
 }
 printf("Value found between indexes [%lu] and [%lu]\n",
-       low->index, high->index);
+low->index, high->index);
 while (low != NULL && low->index < size && low->index <= high->index)
 {
 printf("Value checked at index [%lu] = [%d]\n", low->index, low->n);
