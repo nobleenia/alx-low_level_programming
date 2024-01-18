@@ -17,15 +17,18 @@ size_t end = size - 1;
 
 if (array != NULL)
 {
-while (start <= end)
+while (start < end)
 {
 mid = (start + end) / 2;
 printf("Searching in array: ");
-for (i = start; i < end; i++)
+for (i = start; i <= end; i++)
 {
-printf("%d, ", array[i]);
+printf("%d", array[i]);
+if (i < end)
+{
+printf(", ");
 }
-printf("%d\n", array[i]);
+}
 if (array[mid] < value)
 {
 start = mid + 1;
