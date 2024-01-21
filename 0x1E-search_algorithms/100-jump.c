@@ -16,7 +16,7 @@ size_t high = 0, low = 0, i;
 
 if (array != NULL)
 {
-while (high < size && array[size] < value)
+while (high < size)
 {
 low = high;
 high = high + sqrt(size);
@@ -25,17 +25,15 @@ low, array[low]);
 }
 printf("Value found between indexes [%lu] and [%lu]\n",
 low, high);
-for (i = low; i <= high; i++)
-{
-if (i < size)
+for (i = low; i < size && i <= high; i++)
 {
 printf("Value checked array[%lu] = [%d]\n",
 i, array[i]);
-if (array[i] == value)
+}
+if (i < size && array[i] == value)
 {
-return (i);
-}
-}
+printf("Found at index: %lu\n", i);
+return i;
 }
 }
 return (-1);
